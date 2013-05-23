@@ -70,6 +70,12 @@ section.content div.container {
 	padding: 1em;
 }
 
+blockquote {
+	margin: 0;
+	border-left: .5em solid #555;
+	padding-left: 1em;
+}
+
 .rgba header.site figure img {
 	border-color: rgba(100,100,100,.25);
 }
@@ -121,6 +127,26 @@ section.content div.container {
 		bottom: 0;
 		left: 0;
 	}
+
+	section.content div.container > hr {
+		margin: 0;
+	}
+
+	section.content div.container > h1,
+	section.content div.container > h2,
+	section.content div.container > hr,
+	section.content div.container > div,
+	section.content div.container > p,
+	section.content div.container > iframe {
+		max-width: 550px;
+	}
+
+	section.content div.container > h1 {
+		font-size: 2.5em;
+	}
+	section.content div.container > h2 {
+		font-size: 2em;
+	}
 }
 
 @media (min-width: 1024px) {
@@ -130,6 +156,20 @@ section.content div.container {
 	header.site p,
 	header.site a {
 		font-size: 1em;
+	}
+	section.content div.container > h1,
+	section.content div.container > h2,
+	section.content div.container > hr,
+	section.content div.container > div,
+	section.content div.container > p,
+	section.content div.container > iframe {
+		max-width: 700px;
+	}
+	section.content div.container > h1 {
+		font-size: 3.25em;
+	}
+	section.content div.container > h2 {
+		font-size: 2.75em;
 	}
 }
 
