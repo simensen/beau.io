@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="{{ site.url }}/components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="{{ site.url }}/css/style.css" rel="stylesheet" type="text/css" />
+        <script src="{{ site.url }}/components/modernizr/modernizr.js"></script>
+        <link href="{{ site.url }}/components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="background"><!-- hack for mobile safari --></div>
+        <header class="site">
+            <figure>
+                <img src="{{ site.url }}/assets/city.jpg">
+            </figure>
+            <h1>Beau Simensen</h1>
+            <p>A proponent for framework agnostic code. Unbundle all the things!</p>
+            <ul>
+                <li><a href="https://twitter.com/beausimensen"><i class="icon icon-twitter"></i> @beausimensen</a></li>
+                <li><a href="https://github.com/simensen"><i class="icon icon-github"></i> simensen</a></li>
+            </ul>
+        </header>
+        <section class="content">
+            <div class="container">
+                {% block content %}
+                {% endblock %}
+            </div>
+        </section>
+        <footer>
+        </footer>
+    </body>
+</html>

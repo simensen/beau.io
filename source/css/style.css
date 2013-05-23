@@ -1,0 +1,154 @@
+* {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(blackmamba.png);
+	margin: 0;
+}
+
+#background {
+	z-index: -1;
+	display: none;
+}
+
+header.site {
+	padding: 1em;
+	color: #bbb;
+	text-align: center;
+}
+
+header.site h1 {
+	margin: 0;
+}
+header.site h2 {
+	margin: 0;
+	padding: 0;
+}
+
+header.site ul {
+	padding: 0;
+	list-style: none;
+}
+
+header.site ul li {
+	display: inline-block;
+	margin: 0 .5em;
+}
+
+header.site ul a {
+	text-decoration: none;
+	color: #bbb;
+}
+
+header.site p {
+	color: #555;
+	margin: 1em 0;
+}
+
+header.site figure {
+	margin: 0;
+}
+
+header.site figure img {
+	display: block;
+	margin: 0 auto 1em auto;
+	max-width: 300px;
+	width: 100%;
+	height: auto;
+	border: .25em solid #555;
+}
+
+section.content {
+	border-top: .5em solid #555;
+}
+
+section.content div.container {
+	background-color: #f0f0f0;
+	min-height: 400px;
+	padding: 1em;
+}
+
+.rgba header.site figure img {
+	border-color: rgba(100,100,100,.25);
+}
+
+.rgba section.content {
+	border-color: rgba(100,100,100,.25);
+}
+
+@media (min-width: 768px) {
+	header.site {
+		position: absolute;
+		text-align: left;
+		width: 25%;
+		padding: 1.5em;
+	}
+
+	section.content {
+		position: relative;;
+		margin-left: 25%;
+		border-left: .5em solid #555;
+		border-top: none;
+	}
+
+	header.site figure img {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	header.site h1 {
+		font-size: 1.25em;
+	}
+
+	header.site p,
+	header.site a {
+		font-size: .8em;
+	}
+
+	header.site ul li {
+		display: list-item;
+		margin: 0;
+	}
+
+	#background {
+		background-image: url(blackmamba.png);
+		display: block;
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+}
+
+@media (min-width: 1024px) {
+	header.site h1 {
+		font-size: 2em;
+	}
+	header.site p,
+	header.site a {
+		font-size: 1em;
+	}
+}
+
+@media (min-width: 768px) and (min-height: 400px) {
+	body {
+		background-attachment: fixed;
+	}
+
+	header.site {
+		position: fixed;
+	}
+
+	section.content div.container {
+		min-height: 100%;
+	}
+}
+
+@media (max-height: 320px) {
+	header.site figure img {
+		max-width: 150px;
+	}
+}
