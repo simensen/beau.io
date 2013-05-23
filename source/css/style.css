@@ -76,6 +76,16 @@ blockquote {
 	padding-left: 1em;
 }
 
+img.sfl_portland {
+	float: right;
+	width: 75px;
+	height: auto;
+	margin-left: .5em;
+	margin-bottom: .5em;
+}
+
+
+
 .rgba header.site figure img {
 	border-color: rgba(100,100,100,.25);
 }
@@ -132,13 +142,19 @@ blockquote {
 		margin: 0;
 	}
 
+	img.sfl_portland {
+		width: 150px;
+	}
+
 	section.content div.container > h1,
 	section.content div.container > h2,
 	section.content div.container > hr,
 	section.content div.container > div,
 	section.content div.container > p,
+	section.content div.container > hr,
 	section.content div.container > iframe {
 		max-width: 550px;
+		margin-right: 100px;
 	}
 
 	section.content div.container > h1 {
@@ -153,15 +169,22 @@ blockquote {
 	header.site h1 {
 		font-size: 2em;
 	}
+
 	header.site p,
 	header.site a {
 		font-size: 1em;
 	}
+
+	img.sfl_portland {
+		width: 200px;
+	}
+
 	section.content div.container > h1,
 	section.content div.container > h2,
 	section.content div.container > hr,
 	section.content div.container > div,
 	section.content div.container > p,
+	section.content div.container > hr,
 	section.content div.container > iframe {
 		max-width: 700px;
 	}
