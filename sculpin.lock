@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "46d49f26c2716cdc71dd08b13a5a876b",
+    "hash": "b2c8745b5156abedbdf02c33821bfa6f",
     "packages": [
         {
             "name": "components/font-awesome",
@@ -195,21 +195,21 @@
         },
         {
             "name": "kriswallsmith/assetic",
-            "version": "v1.1.0",
+            "version": "v1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kriswallsmith/assetic.git",
-                "reference": "v1.1.0"
+                "reference": "735cffd3982c6e8cdebe292d5db39d077f65890f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/v1.1.0",
-                "reference": "v1.1.0",
+                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/735cffd3982c6e8cdebe292d5db39d077f65890f",
+                "reference": "735cffd3982c6e8cdebe292d5db39d077f65890f",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.1",
-                "symfony/process": ">=2.1,<3.0"
+                "symfony/process": "~2.1"
             },
             "require-dev": {
                 "cssmin/cssmin": "*",
@@ -219,9 +219,9 @@
                 "leafo/scssphp": "*",
                 "leafo/scssphp-compass": "*",
                 "mrclay/minify": "*",
-                "phpunit/phpunit": ">=3.7,<4.0",
+                "phpunit/phpunit": "~3.7",
                 "ptachoire/cssembed": "*",
-                "twig/twig": ">=1.6,<2.0"
+                "twig/twig": "~1.6"
             },
             "suggest": {
                 "leafo/lessphp": "Assetic provides the integration with the lessphp LESS compiler",
@@ -262,20 +262,20 @@
                 "compression",
                 "minification"
             ],
-            "time": "2013-05-16 05:28:39"
+            "time": "2013-07-19 00:03:27"
         },
         {
             "name": "robloach/component-installer",
-            "version": "0.0.11",
+            "version": "0.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/RobLoach/component-installer.git",
-                "reference": "0.0.11"
+                "reference": "1864f25db21fc173e02a359f646acd596c1b0460"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RobLoach/component-installer/zipball/0.0.11",
-                "reference": "0.0.11",
+                "url": "https://api.github.com/repos/RobLoach/component-installer/zipball/1864f25db21fc173e02a359f646acd596c1b0460",
+                "reference": "1864f25db21fc173e02a359f646acd596c1b0460",
                 "shasum": ""
             },
             "require": {
@@ -306,7 +306,7 @@
                 }
             ],
             "description": "Allows installation of Components via Composer.",
-            "time": "2013-05-10 04:14:46"
+            "time": "2013-08-31 23:46:48"
         }
     ],
     "packages-dev": [
@@ -320,10 +320,7 @@
         "sculpin/sculpin": 20,
         "dflydev/embedded-composer-console": 20,
         "dflydev/embedded-composer-core": 20,
-        "composer/composer": 20,
-        "symfony/console": 20,
-        "symfony/debug": 20,
-        "symfony/http-kernel": 20
+        "composer/composer": 20
     },
     "platform": [
 
