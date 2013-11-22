@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "b2c8745b5156abedbdf02c33821bfa6f",
+    "hash": "0af6b94cc93cf5583a26109145cba835",
     "packages": [
         {
             "name": "components/font-awesome",
@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/components/font-awesome.git",
-                "reference": "3.0.2"
+                "reference": "e60ff7f03aecf4d8be6bdebe950135ac25bf4c1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/components/font-awesome/zipball/3.0.2",
-                "reference": "3.0.2",
+                "url": "https://api.github.com/repos/components/font-awesome/zipball/e60ff7f03aecf4d8be6bdebe950135ac25bf4c1b",
+                "reference": "e60ff7f03aecf4d8be6bdebe950135ac25bf4c1b",
                 "shasum": ""
             },
             "require": {
@@ -44,7 +44,7 @@
                 "OFL-1.1"
             ],
             "description": "The iconic font designed for use with Twitter Bootstrap.",
-            "time": "2013-05-02 22:22:19"
+            "time": "2013-05-03 00:30:29"
         },
         {
             "name": "components/jquery",
@@ -52,12 +52,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/components/jquery.git",
-                "reference": "1.9.1"
+                "reference": "0e94233e6a4ab678d8fc04312241b2f840717b0c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/components/jquery/zipball/1.9.1",
-                "reference": "1.9.1",
+                "url": "https://api.github.com/repos/components/jquery/zipball/0e94233e6a4ab678d8fc04312241b2f840717b0c",
+                "reference": "0e94233e6a4ab678d8fc04312241b2f840717b0c",
                 "shasum": ""
             },
             "require": {
@@ -89,7 +89,7 @@
             ],
             "description": "jQuery JavaScript Library",
             "homepage": "http://jquery.com",
-            "time": "2013-04-22 17:13:31"
+            "time": "2013-07-16 10:41:05"
         },
         {
             "name": "components/modernizr",
@@ -97,12 +97,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/components/modernizr.git",
-                "reference": "2.6.2"
+                "reference": "c470050f9906b1197ddaa7aace41f73eba5f4ecf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/components/modernizr/zipball/2.6.2",
-                "reference": "2.6.2",
+                "url": "https://api.github.com/repos/components/modernizr/zipball/c470050f9906b1197ddaa7aace41f73eba5f4ecf",
+                "reference": "c470050f9906b1197ddaa7aace41f73eba5f4ecf",
                 "shasum": ""
             },
             "require": {
@@ -162,16 +162,16 @@
         },
         {
             "name": "components/normalize.css",
-            "version": "2.1.1",
+            "version": "2.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/components/normalize.css.git",
-                "reference": "2.1.1"
+                "reference": "444055467d693c67923643a0f593eff8a7afc588"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/components/normalize.css/zipball/2.1.1",
-                "reference": "2.1.1",
+                "url": "https://api.github.com/repos/components/normalize.css/zipball/444055467d693c67923643a0f593eff8a7afc588",
+                "reference": "444055467d693c67923643a0f593eff8a7afc588",
                 "shasum": ""
             },
             "require": {
@@ -180,6 +180,7 @@
             "type": "component",
             "extra": {
                 "component": {
+                    "name": "normalize-css",
                     "styles": [
                         "normalize.css"
                     ]
@@ -191,7 +192,7 @@
             ],
             "description": "Normalize.css is a customisable CSS file that makes browsers render all elements more consistently and in line with modern standards.",
             "homepage": "http://necolas.github.com/normalize.css/",
-            "time": "2013-04-13 19:46:11"
+            "time": "2013-10-24 03:39:15"
         },
         {
             "name": "kriswallsmith/assetic",
@@ -316,12 +317,9 @@
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "sculpin/sculpin": 20,
-        "dflydev/embedded-composer-console": 20,
-        "dflydev/embedded-composer-core": 20,
-        "composer/composer": 20
-    },
+    "stability-flags": [
+
+    ],
     "platform": [
 
     ],
