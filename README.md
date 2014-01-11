@@ -6,7 +6,7 @@ This repository contains (almost) everything that makes up
 
 Powered by [Sculpin](https://sculpin.io). =)
 
-&copy; Dragonfly Development, Inc.
+&copy; Beau Simensen
 
 
 Build
