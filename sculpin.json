@@ -1,0 +1,11 @@
+{
+    "require": {
+        "components/bootstrap": "3.0.3",
+        "components/font-awesome": "4.0.3",
+        "components/jquery": "1.9.1",
+        "components/modernizr": "2.6.2"
+    },
+    "config": {
+        "component-dir": "source/components"
+    }
+}

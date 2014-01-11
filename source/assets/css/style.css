@@ -1,0 +1,385 @@
+
+/*
+#277edf
+*/
+
+* {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#background {
+    background: #000 url("background.jpg") no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+html.ios #background {
+	position: absolute;
+}
+
+.navbar.navbar-default {
+	background-color: rgba(255, 255, 255, .95);
+}
+
+#welcome {
+	width: 100%;
+	min-height: 100%;
+	position: relative;
+	text-shadow: 1px 1px 2px rgba(0,0,0,.75);
+}
+
+#welcome .welcome-container {
+	position:absolute;
+	top:50%;
+	text-align: center;
+	width: 100%;
+	color: #fff;
+}
+
+#welcome header h1 {
+	font-size: 2em;
+	margin: 0;
+}
+
+#welcome header p {
+	margin: .5em auto;
+}
+
+#welcome header p,
+#welcome header h1 {
+	text-transform: uppercase;
+	line-height: 1em;
+}
+
+#welcome header h1 {
+	letter-spacing: .1em;
+}
+
+#welcome header p {
+	letter-spacing: .2em;
+}
+#welcome ul.social-media {
+	list-style-type: none;
+	padding: 0;
+	margin: 3em 0;
+}
+
+#welcome ul.social-media li {
+	display: inline-block;
+
+	background-color: rgba(100, 100, 100, .125);
+	border: 1px solid rgba(255, 255, 255, .95);
+	border-radius: 50%;
+
+	margin: 0 .125em;
+}
+
+#welcome ul.social-media li a {
+	color: #fff;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	width: 4em;
+	height: 4em;
+}
+
+#welcome ul.social-media li a i {
+	font-size: 2em;
+}
+
+#welcome ul.social-media li:hover {
+	background-color: rgba(255, 255, 255, .5);
+	border-color: #fff;
+	cursor: pointer;
+}
+
+#projects a.primary,
+#skills a.primary,
+#welcome a.primary {
+	display: inline-block;
+	padding: 1em 1.5em;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: .1em;
+}
+
+#projects a.primary:hover,
+#skills a.primary:hover,
+#welcome a.primary:hover {
+	text-decoration: none;
+}
+
+
+#welcome a.primary {
+	background-color: rgba(100, 100, 100, .125);
+	border: 2px solid rgba(255, 255, 255, .95);
+	color: #fff;
+}
+#welcome a.primary:hover {
+	background-color: rgba(255, 255, 255, .5);
+	border-color: #fff;
+}
+
+#projects a.primary,
+#skills a.primary {
+	border: 2px solid #277edf;
+	color: #277edf;
+}
+#projects a.primary:hover,
+#skills a.primary:hover {
+	background-color: rgba(200, 200, 200, .125);
+	border-color: #2263ac;
+}
+
+#projects .see-more-projects,
+#skills .hire-me {
+	text-align: center;
+	padding: 5em 0;
+}
+
+#projects .see-more-projects {
+	clear: left;
+	padding: 2em 0;
+}
+
+#welcome .welcome-container {
+	margin-top: -9em;
+}
+
+section:not(#welcome) {
+	min-height: 100%;
+	padding-bottom: 15em;
+}
+
+section:not(#welcome):nth-of-type(2n) {
+	background-color: #fff;
+}
+section:not(#welcome):nth-of-type(2n+1) {
+	background-color: #f7f7f7;
+}
+
+.navbar-brand {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+/*
+html.ios-iphone section:not(#welcome) {
+	margin-top: 200px;
+}
+*/
+
+section>header {
+	padding-top: 50px;
+}
+section>header .header-container {
+	margin-top: 4em;
+	margin-bottom: 2em;
+}
+section>.container {
+	margin-top: 1em;
+}
+
+section>header h1 {
+	font-size: 3em;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	text-align: center;
+	line-height: 1em;
+	margin: 0;
+}
+section>header h1:after {
+	content: "";
+	background-color: #277edf;
+	display: block;
+	width: 2em;
+	height: 2px;
+	margin: .5em auto;
+}
+section>header p {
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	text-align: center;
+}
+
+.headshot-wrapper {
+	background-color: #ccc;
+	border: 1em solid #eee;
+	border-radius: 50%;
+	margin: 0 auto 1em;
+	overflow: hidden;
+	max-width: 200px;
+}
+
+.headshot-wrapper .headshot {
+	width: 100%;
+	height: 0;
+	padding-bottom: 100%;
+}
+.headshot-wrapper img {
+	max-width: 100%;
+	height: auto;
+}
+
+.chart {
+	position: relative;
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	margin: 2em 0;
+	text-align:center;
+}
+
+.chart canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.percent{
+	display: inline-block;
+	line-height: 150px;
+	z-index: 2;
+}
+
+.percent:after {
+	content: '%';
+	margin-left: .1em;
+	font-size:.8em
+}
+
+#skills .skill {
+	text-align: center;
+}
+#skills .skill h2 { font-size: 1em; margin: 1em 0; }
+
+#projects .project,
+#experience .experience {
+	margin: 1em 0;
+}
+
+#projects .project.with-logo .logo-wrapper,
+#experience .experience.with-logo .logo-wrapper {
+	margin: 2em auto;
+	display: block;
+	width: 200px;
+}
+
+#projects .project > p,
+#experience .experience > p {
+	line-height: 1.5em;
+}
+
+#projects .project.with-logo img,
+#experience .experience.with-logo img {
+	max-width: 5em;
+	height: auto;
+}
+
+#projects .project.with-logo .logo-wrapper,
+#experience .experience.with-logo .logo-wrapper {
+	float: right;
+	margin-left: 1em;
+	width: auto;
+}
+
+#experience .role-wrapper {
+	font-weight: 300;
+	opacity: .5;
+}
+
+footer.site {
+	background-color: #277edf;
+	border-top: 2px solid #2263ac;
+	padding: 3em 0;
+	color: #ddd;
+	text-align: center;
+}
+
+
+@media only screen and (min-width: 480px) {
+	#welcome header h1 {
+		font-size: 3em;
+	}
+	#welcome header p {
+		font-size: 1.5em;
+	}
+	#welcome .welcome-container {
+		margin-top: -9.75em;
+	}
+
+	#projects .project.with-logo img,
+	#experience .experience.with-logo img {
+		max-width: 9em;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 768px) {
+	#welcome header h1 {
+		font-size: 4.5em;
+	}
+	#welcome header p {
+		font-size: 2em;
+	}
+	#welcome .welcome-container {
+		margin-top: -9.75em;
+	}
+	.headshot-wrapper {
+		max-width: 400px;
+	}
+
+	#projects .project.with-logo img,
+	#experience .experience.with-logo img {
+		max-width: 10em;
+	}
+
+	#projects .project.with-logo .logo-wrapper,
+	#experience .experience.with-logo .logo-wrapper {
+		float: left;
+		margin-left: 0;
+		margin-right: 2em;
+		width: auto;
+	}
+
+	#projects .project:not(.with-logo) .project-meta,
+	#experience .experience:not(.with-logo) .experience-meta
+	{
+		margin-left: 12em;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
+	#projects .project:not(.with-logo) .experience-meta,
+	#experience .experience:not(.with-logo) .experience-meta {
+		margin-left: 0;
+	}
+
+	#projects .project.with-logo:nth-of-type(2n+1),
+	#experience .experience.with-logo:nth-of-type(2n+1) {
+		clear: both;
+	}
+}
