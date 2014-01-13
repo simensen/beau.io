@@ -281,7 +281,7 @@ section>header p {
 
 #projects .project.with-logo .logo-wrapper,
 #experience .experience.with-logo .logo-wrapper {
-	margin: 2em auto;
+	margin: 2em auto 3em;
 	display: block;
 	width: 200px;
 }
