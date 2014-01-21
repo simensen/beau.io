@@ -116,6 +116,14 @@
         });
 
 
+        $("#skills .chart").easyPieChart({
+            barColor: "#3498db",
+            size: "150",
+            easing: "easeOutBounce",
+            animate: false
+        });
+
+        /*
         var $easyPieChart = $("#skills .chart");
 
         $("#skills").waypoint(function() {
@@ -147,6 +155,7 @@
             }
         };
         initLoadChecker();
+        */
     });
     </script>
     {% if site.google_analytics_tracking_id %}
