@@ -1,0 +1,121 @@
+---
+layout: default
+title: Experience
+experiences:
+    -
+        name: Dragonfly Development
+        website: http://dflydev.com
+        role: Founder and Software Architect
+        description: Responsible for high-touch client services for two major clients over five years. Tasks and projects included devops, continuous integration, online resource management, enterprise application development, and writing C code for embedded systems.
+        logo: assets/images/experience/dflydev.png
+        start: 2009
+    -
+        name: Offloc
+        website: http://offloc.com
+        role: Co-Founder and Software Architect
+        description: Responsible for developing and deploying numerous high traffic microsites and research and development of <a href="http://offloc.com/amp/">AMP (Ambient Media Portal)</a>.
+        logo: assets/images/experience/offloc.png
+        start: 2010
+    -
+        name: REFLX Labs
+        website: http://reflxlabsinc.com
+        role: Co-Founder and Chief Software Architect
+        description: Responsible for research and advising on long-term plans of the <a href="http://boogio.com">Boogio</a> product. Integration Boogio and Google Glass.
+        logo: assets/images/experience/reflxlabs.png
+        start: 2013
+    -
+        name: Mirror Quest
+        website: http://mirrorquest.com
+        role: Chief Software Architect
+        description: Responsible for research and advising on long-term plans for health related wearable technologies.
+        logo: assets/images/experience/mirrorquest.png
+        start: 2013
+    -
+        name: Propmarks
+        website: http://propmarks.com
+        role: Co-Founder and Software Architect
+        description: Responsible for initial planning and development of the Propmarks platform.
+        start: 2010
+        end: 2012
+    -
+        name: Halogen Creative
+        location: Utah, Washington
+        role: Co-Founder and Software Architect
+        description: Responsible for research, design, and development of client and internal projects.
+        start: 2005
+        end: 2009
+    -
+        name: VIB.tv/HomeNet Communications
+        location: Utah, Washington
+        role: Lead Software Developer
+        description: Responsible for design and development of set-top box software providing video services (live television and video-on-demand) over IP for Fiber To The Home networks.
+        start: 2002
+        end: 2005
+    -
+        name: Zengine
+        location: California
+        role: Software engineer, engineering manager
+        description: Responsible for development of core project in addition to release management and managing the QA team.
+        start: 2001
+        end: 2002
+    -
+        name: DNAI/RCN
+        location: California
+        role: Software developer, Regional systems manager
+        description:  Responsible for rewriting and maintaining internal billing and accounting software, created internal tools for customer support and customer service, and designed a migration plan for two legacy ISPs to be moved to a new shared data center.
+
+
+
+---
+{% block content %}
+<section id="experience">
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <h1>Experience</h1>
+                <p>Companies for which I have worked or owned</p>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            {% for experience in page.experiences %}
+                <div class="experience clearfix {% if experience.logo %}with-logo col-lg-6{% else %}col-lg-12{% endif %}">
+                    {% if experience.logo %}
+                        <div class="logo-wrapper">
+                            {% if experience.website %}<a href="{{ experience.website }}">{% endif %}
+                            <img src="{{ site.url }}/{{ experience.logo }}">
+                            {% if experience.website %}</a>{% endif %}
+                        </div>
+                    {% endif %}
+                    <div class="experience-meta">
+                        <h2>{{ experience.name }}</h2>
+                        {% if experience.website %}
+                            <a href="{{ experience.website }}">{{ experience.website }}</a>
+                        {% endif %}
+                        <div class="role-wrapper">
+                            <p>
+                                <span class="role">{{ experience.role }}</span>
+                                from
+                                <span class="time">
+                                    {{ experience.start }} -
+                                    {% if experience.end %}
+                                        {{ experience.end }}
+                                    {% else %}
+                                        Present
+                                    {% endif %}
+                                    {% if experience.location %}
+                                        ({{ experience.location }})
+                                    {% endif %}
+                                </span>
+                            </p>
+                        </div>
+                         <p>{{ experience.description|raw }}</p>
+                     </div>
+                 </div>
+            {% endfor %}
+        </div>
+    </div>
+    <a class="continue hide-text" href="#projects"></a>
+</section>
+{% endblock %}

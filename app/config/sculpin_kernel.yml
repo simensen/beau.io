@@ -1,0 +1,3 @@
+sculpin_content_types:
+    talks:
+        permalink: talks/:year/:month/:day/:filename/

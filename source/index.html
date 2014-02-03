@@ -8,91 +8,12 @@ skills:
     - {type: lang, name: Python, percent: 70}
     - {type: lang, name: Ruby, percent: 70}
     - {type: lang, name: Objective-C, percent: 50}
-projects:
-    -
-        name: Sculpin
-        website: https://sculpin.io
-        description: An extensible PHP static site generator.
-        marketing: http://dflydev.com/projects/sculpin
-        is_featured: true
-        logo: assets/images/projects/sculpin-mascot-jackson-large@2x.png
-    -
-        name: Stack
-        website: http://stackphp.com
-        marketing: http://dflydev.com/projects/stackphp
-        description: Symfony HTTP Kernel middlewares.
-        is_featured: true
-        logo: assets/images/projects/stack-logo.png
-
-experiences:
-    -
-        name: Dragonfly Development
-        website: http://dflydev.com
-        role: Founder and Software Architect
-        description: Responsible for high-touch client services for two major clients over five years. Tasks and projects included devops, continuous integration, online resource management, enterprise application development, and writing C code for embedded systems.
-        logo: assets/images/experience/dflydev.png
-        start: 2009
-    -
-        name: Offloc
-        website: http://offloc.com
-        role: Co-Founder and Software Architect
-        description: Responsible for developing and deploying numerous high traffic microsites and research and development of <a href="http://offloc.com/amp/">AMP (Ambient Media Portal)</a>.
-        logo: assets/images/experience/offloc.png
-        start: 2010
-    -
-        name: REFLX Labs
-        website: http://reflxlabsinc.com
-        role: Co-Founder and Chief Software Architect
-        description: Responsible for research and advising on long-term plans of the <a href="http://boogio.com">Boogio</a> product. Integration Boogio and Google Glass.
-        logo: assets/images/experience/reflxlabs.png
-        start: 2013
-    -
-        name: Mirror Quest
-        website: http://mirrorquest.com
-        role: Chief Software Architect
-        description: Responsible for research and advising on long-term plans for health related wearable technologies.
-        logo: assets/images/experience/mirrorquest.png
-        start: 2013
-    -
-        name: Propmarks
-        website: http://propmarks.com
-        role: Co-Founder and Software Architect
-        description: Responsible for initial planning and development of the Propmarks platform.
-        start: 2010
-        end: 2012
-    -
-        name: Halogen Creative
-        location: Utah, Washington
-        role: Co-Founder and Software Architect
-        description: Responsible for research, design, and development of client and internal projects.
-        start: 2005
-        end: 2009
-    -
-        name: VIB.tv/HomeNet Communications
-        location: Utah, Washington
-        role: Lead Software Developer
-        description: Responsible for design and development of set-top box software providing video services (live television and video-on-demand) over IP for Fiber To The Home networks.
-        start: 2002
-        end: 2005
-    -
-        name: Zengine
-        location: California
-        role: Software engineer, engineering manager
-        description: Responsible for development of core project in addition to release management and managing the QA team.
-        start: 2001
-        end: 2002
-    -
-        name: DNAI/RCN
-        location: California
-        role: Software developer, Regional systems manager
-        description:  Responsible for rewriting and maintaining internal billing and accounting software, created internal tools for customer support and customer service, and designed a migration plan for two legacy ISPs to be moved to a new shared data center.
-
-
 
 
 
 
 ---
+{% block content %}
 <section id="welcome">
     <div class="welcome-container">
         <header>
@@ -101,8 +22,9 @@ experiences:
         </header>
         <ul class="social-media">
             <li><a href="https://twitter.com/beausimensen"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://plus.google.com/+BeauSimensen"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/simensen"><i class="fa fa-linkedin"></i></a></li>
             <li><a href="https://github.com/simensen"><i class="fa fa-github"></i></a></li>
-            <li><a href="http://srcmvn.com"><i class="fa fa-rss"></i></a></li>
         </ul>
         <a class="primary" href="mailto:beau@beau.io">Contact Me</a>
     </div>
@@ -146,7 +68,9 @@ experiences:
             </div>
     </div>
 </section>
+<!--
 <section id="news">
+    <a class="return hide-text" href="#profile"></a>
     <header>
         <div class="container">
             <div class="header-container">
@@ -177,6 +101,8 @@ experiences:
 
     </div>
 </section>
+-->
+<!--
 <section id="skills">
     <header>
         <div class="container">
@@ -200,7 +126,10 @@ experiences:
             <a class="primary" href="mailto:beau@beau.io">Hire Me</a>
         </div>
     </div>
+    <a class="continue hide-text" href="#experience"></a>
 </section>
+-->
+<!--
 <section id="experience">
     <header>
         <div class="container">
@@ -248,7 +177,10 @@ experiences:
             {% endfor %}
         </div>
     </div>
+    <a class="continue hide-text" href="#projects"></a>
 </section>
+-->
+<!--
 <section id="projects">
     <header>
         <div class="container">
@@ -283,6 +215,7 @@ experiences:
         </div>
     </div>
 </section>
+-->
 <!--
 <section id="talks">
     <header>
@@ -296,3 +229,4 @@ experiences:
     </div>
 </section>
 -->
+{% endblock %}

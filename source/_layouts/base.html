@@ -6,22 +6,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        {% if page.full_title %}
-            {{ page.full_title }}
-        {% elseif page.title %}
-            {{ page.title }} &mdash; Beau Simensen
-        {% else %}
-            Beau Simensen
-        {% endif %}
-    </title>
+    {% include "title" %}
     <link href="{{ site.url }}/components/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,700,600' rel='stylesheet' type='text/css'>
-    <link href="{{ site.url }}/assets/css/style.css" rel="stylesheet" media="screen">
+    <link href="{{ site.url }}/assets/css/style.css?assets_version={{ site.assets_version }}" rel="stylesheet" media="screen">
     <link href="{{ site.url }}/components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <script src="{{ site.url }}/assets/js/modernizr.min.js"></script>
+    <meta name="google-site-verification" content="MCUQEY5GBSZE6aFP2NnDuWbpDuI7j_7KpxHujmKsiFs" />
 </head>
-<body>
+<body class="{% if page.nav %}page-{{ page.nav }}{% endif %}">
     <div id="background"></div>
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
@@ -37,12 +30,11 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav" id="main-menu">
                     <li><a href="{{ site.url }}/" data-target="#welcome">Home</a></li>
-                    <li><a href="{{ site.url }}/#profile">Profile</a></li>
-                    <li><a href="{{ site.url }}/#news">News</a></li>
-                    <li><a href="{{ site.url }}/#skills">Skills</a></li>
-                    <li><a href="{{ site.url }}/#experience">Experience</a></li>
-                    <li><a href="{{ site.url }}/#projects">Projects</a></li>
-                    <!--<li><a href="{{ site.url }}/#talks">Talks</a></li>-->
+                    <!--<li><a href="{{ site.url }}/news/">News</a></li>-->
+                    <li><a href="{{ site.url }}/projects/">Projects</a></li>
+                    <li><a href="{{ site.url }}/talks/">Talks</a></li>
+                    <li><a href="{{ site.url }}/experience/">Experience</a></li>
+                    <!--<li><a href="{{ site.url }}/contact/">Contact</a></li>-->
                 </ul>
             </div><!--/.nav-collapse -->
         </div>
@@ -50,6 +42,7 @@
 
     {% block content %}{% endblock %}
 
+    {% block footer %}
     <footer class="site">
         <div class="container">
             <div class="copyright">
@@ -57,6 +50,7 @@
             </div>
         </div>
     </footer>
+    {% endblock %}
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="{{site.url}}/components/jquery/jquery.min.js"><\/script>')</script>
@@ -92,10 +86,36 @@
             $(this).closest('.navbar').find('.navbar-toggle').blur();
         });
 
-        $("a[data-scroll-target], a.navbar-brand, .navbar.navbar-default ul li a[href*='#'], .navbar.navbar-default ul li a[data-target^='#']").on('click', function(e) {
-            // prevent default anchor click behavior
-            e.preventDefault();
+        /*
+        var scrollHider;
+        var scrollHiderSeenFirst = false;
+        var tryToShow = function () {
+            var $a = $('a.return, section:not(#welcome) a.continue');
+            if (scrollHider) {
+                console.log('clearing timeout');
+                clearTimeout(scrollHider);
+            } else {
+                if (scrollHiderSeenFirst) {
+                    console.log('hiding');
+                    $a.addClass('scroll-hidden');
+                }
+            }
 
+            if (scrollHiderSeenFirst) {
+                scrollHider = setTimeout(function () {
+                    console.log('showing');
+                    console.log($a);
+                    $a.removeClass('scroll-hidden');
+                    scrollHider = clearTimeout(scrollHider);
+                }, 250);
+            } else {
+                scrollHiderSeenFirst = true;
+            }
+        };
+        */
+
+        /*
+        $("a.continue, a.return, a[data-scroll-target], a.navbar-brand, .navbar.navbar-default ul li a[href*='#'], .navbar.navbar-default ul li a[data-target^='#']").on('click', function(e) {
             var $closestNavbarCollapse = $(this).closest('.navbar-collapse');
             if ($closestNavbarCollapse.is('.in')) {
                 $closestNavbarCollapse.collapse('toggle');
@@ -105,6 +125,13 @@
             // store hash
             var hash = this.hash ? this.hash : $(this).data('target');
 
+            if (! hash) {
+                return;
+            }
+
+            // prevent default anchor click behavior
+            e.preventDefault();
+
             // animate
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
@@ -112,9 +139,10 @@
                 // when done, add hash to url
                 // (default click behaviour)
                 //window.location.hash = hash;
+                //tryToShow();
             });
         });
-
+        */
 
         $("#skills .chart").easyPieChart({
             barColor: "#3498db",
@@ -122,6 +150,13 @@
             easing: "easeOutBounce",
             animate: false
         });
+
+
+        /*
+        $(window).on('scroll', function () {
+            tryToShow();
+        });
+        */
 
         /*
         var $easyPieChart = $("#skills .chart");

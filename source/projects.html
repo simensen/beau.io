@@ -1,0 +1,57 @@
+---
+layout: default
+title: Projects
+projects:
+    -
+        name: Sculpin
+        website: https://sculpin.io
+        description: An extensible PHP static site generator.
+        marketing: http://dflydev.com/projects/sculpin
+        is_featured: true
+        logo: assets/images/projects/sculpin-mascot-jackson-large@2x.png
+    -
+        name: Stack
+        website: http://stackphp.com
+        marketing: http://dflydev.com/projects/stackphp
+        description: Symfony HTTP Kernel middlewares.
+        is_featured: true
+        logo: assets/images/projects/stack-logo.png
+
+---
+{% block content %}
+<section id="projects">
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <h1>Projects</h1>
+                <p>Notable open source projects for which I consider myself having been heavily involved</p>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+            {% for project in page.projects %}
+                <div class="project clearfix {% if project.logo %}with-logo col-lg-6{% else %}col-lg-12{% endif %}">
+                    {% if project.logo %}
+                        <div class="logo-wrapper">
+                            <a href="{{ project.marketing }}"><img src="{{ site.url }}/{{ project.logo }}"></a>
+                        </div>
+                    {% endif %}
+                    <div class="project-meta">
+                        <h2><a href="{{ project.marketing }}">{{ project.name }}</a></h2>
+                        {% if project.website %}
+                            <a href="{{ project.website }}">{{ project.website }}</a>
+                        {% endif %}
+                         <p>{{ project.description }}</p>
+                         <p class="read-more">
+                            <a href="{{ project.marketing }}">read more &raquo;</a>
+                         </p>
+                     </div>
+                 </div>
+            {% endfor %}
+            <div class="clearfix see-more-projects">
+                <a class="primary" href="http://dflydev.com/projects/">See More Projects</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

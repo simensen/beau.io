@@ -1,0 +1,68 @@
+{% extends "base" %}
+{% block content %}
+<section id="talk">
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <h1>{{ page.title }}</h1>
+                <p>{{ page.location }}</p>
+            </div>
+        </div>
+    </header>
+    {% if page.slides_embed %}
+        <div class="container slides-player">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    {{ page.slides_embed|raw}}
+                </div>
+            </div>
+        </div>
+    {% endif %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <header>
+                    <h1>{{ page.title }}</h1>
+                    <h2>{{ page.location }}</h2>
+                    <h3>
+                        {% if page.fuzzy_date %}
+                            {{ page.date|date("F Y") }}
+                        {% else %}
+                            {{ page.date|date("F jS, Y") }}
+                        {% endif %}
+                    </h3>
+                </header>
+                <div class="description">
+                    {{ page.blocks.description|raw }}
+                </div>
+                <div class="tags">
+                    {% for tag in page.tags %}
+                        <span class="label label-default">{{ tag }}</span>
+                    {% endfor %}
+                </div>
+
+                <br>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-2">
+                {% if page.next_talk %}
+                    <a href="{{ page.next_talk.url }}">
+                        &laquo;{{ page.next_talk.title }}
+                    </a>
+                {% endif %}
+            </div>
+            <div class="col-md-4" style="text-align: right;">
+                {% if page.previous_talk %}
+                    <a href="{{ page.previous_talk.url }}">
+                        {{ page.previous_talk.title }}&raquo;
+                    </a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

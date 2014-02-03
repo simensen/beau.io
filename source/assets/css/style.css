@@ -44,6 +44,19 @@ html.ios #background {
 	min-height: 100%;
 	position: relative;
 	text-shadow: 1px 1px 2px rgba(0,0,0,.75);
+	background-image: url(up.png);
+	background-position: bottom center;
+	background-repeat: no-repeat;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min--moz-device-pixel-ratio: 1.5),
+    only screen and (min-device-pixel-ratio: 1.5) {
+	#welcome {
+		background-image: url(up@2x.png);
+		background-size: 71px 35px;
+	}
 }
 
 #welcome .welcome-container {
@@ -167,9 +180,17 @@ html.ios #background {
 	margin-top: -9em;
 }
 
+a.continue {
+	font-size: 2em;
+	position: absolute;
+	bottom: 1em;
+	left: 50%;
+	margin-left: -.5em;
+}
+
 section:not(#welcome) {
 	min-height: 100%;
-	padding-bottom: 15em;
+	position: relative;
 }
 
 section:not(#welcome):nth-of-type(2n) {
@@ -177,6 +198,11 @@ section:not(#welcome):nth-of-type(2n) {
 }
 section:not(#welcome):nth-of-type(2n+1) {
 	background-color: #f7f7f7;
+}
+
+/*section:not(#welcome) > .container:last-of-type*/
+section > .container:last-of-type {
+	padding-bottom: 15em;
 }
 
 .navbar-brand {
@@ -286,6 +312,7 @@ section>header p {
 	width: 200px;
 }
 
+.talk > .description p,
 #projects .project > p,
 #experience .experience > p {
 	line-height: 1.5em;
@@ -317,8 +344,19 @@ footer.site {
 	text-align: center;
 }
 
+.page-home footer.site {
+}
+
 h2 a {
     color: inherit;
+}
+
+.talk .description p {
+	margin: 1em 0;
+}
+
+.talk .cover-image {
+	box-shadow: 5px 5px 10px rgba(0,0,0,.25);
 }
 
 @media only screen and (min-width: 480px) {
@@ -339,6 +377,11 @@ h2 a {
 }
 
 @media only screen and (min-width: 600px) {
+	.talk .cover-image {
+		float: right;
+		margin: 1.5em 0 2em 3em;
+		max-width: 33%;
+	}
 }
 
 @media only screen and (min-width: 768px) {
