@@ -3,13 +3,13 @@
         {{ page.full_title }}
     {% elseif page.title %}
         {% if site.title %}
-            {{ page.title }} &mdash; {{ site.title }}
+            {{ page.title }} &middot; {{ site.title }}
         {% elseif page.subtitle %}
-            {{ page.title }} &mdash; {{ site.title }} &mdash; {{ site.subtitle }}
+            {{ page.title }} &middot; {{ site.title }} &middot; {{ site.subtitle }}
         {% endif %}
     {% elseif site.title %}
         {% if site.subtitle %}
-            {{ site.title }} &mdash; {{ site.subtitle }}
+            {{ site.title }} &middot; {{ site.subtitle }}
         {% else %}
             {{ site.title }}
         {% endif %}
