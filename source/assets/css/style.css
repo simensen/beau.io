@@ -344,6 +344,10 @@ footer.site {
 	text-align: center;
 }
 
+footer.site a {
+	color: #ddd;
+}
+
 .page-home footer.site {
 }
 
