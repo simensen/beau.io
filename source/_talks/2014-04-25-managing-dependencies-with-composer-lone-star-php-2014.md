@@ -1,6 +1,8 @@
 ---
 title: Managing Dependencies with Composer
 location: Lone Star PHP
+logo: assets/images/talks/lonestarphp-logo.png
+logo_link: http://lonestarphp.com
 tags:
     - conference
     - composer

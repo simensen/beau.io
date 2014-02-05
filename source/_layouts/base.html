@@ -7,6 +7,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% include "title" %}
+    {% if page.meta.description %}
+        <meta name="description" content="{{ page.meta.description|e('html') }}">
+    {% endif %}
+    {% if page.meta.keywords %}
+        <meta name="keywords" content="{% for keyword in page.meta.keywords %}{% if not loop.first %}, {% endif %}{{ keyword|e('html') }}{% endfor %}">
+    {% endif %}
+    {% if page.meta.og %}{% include "og" with {og: page.meta.og} %}{% endif %}
     <link href="{{ site.url }}/components/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,700,600' rel='stylesheet' type='text/css'>
     <link href="{{ site.url }}/assets/css/style.css?assets_version={{ site.assets_version }}" rel="stylesheet" media="screen">

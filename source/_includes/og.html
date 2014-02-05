@@ -1,0 +1,24 @@
+{% if og.title %}
+    <meta property="og:title" content="{{ og.title|raw }}"/>
+{% endif %}
+
+{% if og.description %}
+    <meta property="og:description" content="{{ og.description|raw }}"/>
+{% endif %}
+
+{% if og.type %}
+    <meta property="og:type" content="{{ og.type }}"/>
+{% endif %}
+
+{% if og.image and og.image.url %}
+    <meta property="og:image" content="{{ og.image.url }}"/>
+    {% if og.image.type %}
+        <meta property="og:image:type" content="{{ og.image.type }}"/>
+    {% endif %}
+    {% if og.image.width %}
+        <meta property="og:image:width" content="{{ og.image.width }}"/>
+    {% endif %}
+    {% if og.image.height %}
+        <meta property="og:image:height" content="{{ og.image.height }}"/>
+    {% endif %}
+{% endif %}

@@ -1,17 +1,17 @@
 <div class="talk clearfix" style="margin-bottom: 3em;">
-    {% if talk.cover %}
-        <div class="cover-image">
+    {% if talk.cover or talk.logo %}
+        <div class="{% if talk.cover %}cover-image{% else %}logo{% endif %}">
             <a href="{{ talk.url }}">
-                <img class="img-responsive" src="{{ site.url }}/{{ talk.cover }}">
+                <img class="img-responsive" src="{{ site.url }}/{% if talk.cover %}{{ talk.cover }}{% else %}{{ talk.logo }}{% endif %}">
             </a>
         </div>
     {% endif %}
     <div>
         <header>
             <h2><a href="{{ talk.url }}">{{ talk.title }}</a></h2>
-            <h3>{{ talk.location }}</h3>
+            <h3>At {{ talk.location }}</h3>
             <h4>
-                {% if talk.fuzzy_date %}
+                on {% if talk.fuzzy_date %}
                     {{ talk.date|date("F Y") }}
                 {% else %}
                     {{ talk.date|date("F jS, Y") }}
@@ -20,6 +20,15 @@
         </header>
         <div class="description">
             {{ talk.blocks.description|raw }}
+
+            {% if talk.joinedin %}
+                <p>
+                    Read and write reviews for this talk!
+                    <a href="{{ talk.joinedin }}">
+                        <img class="joinedin" src="{{ site.url }}/assets/images/talks/joinedin-logo.png">
+                    </a>
+                </p>
+            {% endif %}
         </div>
         <div class="tags">
             {% for tag in talk.tags %}

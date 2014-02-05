@@ -1,6 +1,9 @@
 ---
 title: Managing Dependencies with Composer
 location: Sunshine PHP 2014
+logo: assets/images/talks/sunshinephp-logo.png
+logo_link: http://2014.sunshinephp.com/talks#managing-dependencies-with-composer
+joinedin: https://joind.in/talk/view/10536
 tags:
     - conference
     - composer

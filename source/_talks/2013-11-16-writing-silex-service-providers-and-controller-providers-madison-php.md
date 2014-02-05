@@ -4,6 +4,9 @@ location: Madison PHP 2013
 slides: https://speakerdeck.com/simensen/writing-silex-service-providers-and-controller-providers-madison-php
 slides_embed: <script async class="speakerdeck-embed" data-id="0075720030be013117614a6663548e9a" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 cover: assets/images/talks/2013-11-16-writing-silex-service-providers-and-controller-providers.jpg
+logo: assets/images/talks/madisonphp-logo.png
+logo_link: http://2013.madisonphpconference.com/schedule/view/6/writing-silex-service-providers-and-controller-providers-beau-simensen
+joinedin: https://joind.in/talk/view/10056
 tags:
     - conference
     - silex

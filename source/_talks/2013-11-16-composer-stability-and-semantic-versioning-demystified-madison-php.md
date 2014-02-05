@@ -4,6 +4,9 @@ location: Madison PHP 2013
 slides: https://speakerdeck.com/simensen/composer-stability-and-semantic-versioning-demystified-madison-php
 slides_embed: <script async class="speakerdeck-embed" data-id="28b27da0313401310d85126c78e4c954" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 cover: assets/images/talks/2013-11-16-composer-stability-and-semantic-versioning-demystified.jpg
+logo: assets/images/talks/madisonphp-logo.png
+logo_link: http://2013.madisonphpconference.com/schedule/view/13/composer-stability-and-semantic-versioning-demystified-beau-simensen
+joinedin: https://joind.in/talk/view/10064
 tags:
     - conference
     - composer

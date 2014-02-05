@@ -228,7 +228,7 @@ section>.container {
 }
 
 section>header h1 {
-	font-size: 3em;
+	font-size: 2em;
 	text-transform: uppercase;
 	letter-spacing: .1em;
 	text-align: center;
@@ -359,6 +359,34 @@ h2 a {
 	box-shadow: 5px 5px 10px rgba(0,0,0,.25);
 }
 
+section h2 {
+	font-size: 1.5em;
+	margin: 20px 0 0px;
+}
+section h3 {
+	font-size: 1em;
+	font-weight: normal;
+	margin: 0 0;
+	display: inline-block;
+	font-weight: 300;
+	opacity: .5;
+}
+
+section h4 {
+	font-size: 1em;
+	display: inline-block;
+	font-weight: normal;
+	margin: 0 0;
+	font-weight: 300;
+	opacity: .5;
+}
+
+img.joinedin {
+	margin: 0 .5em;
+	width: 100px;
+	height: 30px;
+}
+
 @media only screen and (min-width: 480px) {
 	#welcome header h1 {
 		font-size: 3em;
@@ -374,6 +402,18 @@ h2 a {
 	#experience .experience.with-logo img {
 		max-width: 9em;
 	}
+
+	section>header h1 {
+		font-size: 3em;
+	}
+
+	section h2 {
+		font-size: 2.25em;
+	}
+
+	section h3, section h4 {
+		font-size: 1em;
+	}
 }
 
 @media only screen and (min-width: 600px) {
@@ -381,6 +421,15 @@ h2 a {
 		float: right;
 		margin: 1.5em 0 2em 3em;
 		max-width: 33%;
+	}
+
+	.talk .logo {
+		float: right;
+		margin: 1.5em 0 2em 3em;
+		max-width: 33%;
+	}
+	.talk .logo img {
+		max-height: 150px;
 	}
 }
 

@@ -4,6 +4,8 @@ location: Madison PHP User Group
 slides: https://speakerdeck.com/simensen/namespaces-and-autoloading-madison-php-2014
 slides_embed: <script async class="speakerdeck-embed" data-id="a04fd96066ba013123991ed4354c453c" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 cover: assets/images/talks/2014-01-23-namespaces-and-autoloading.jpg
+logo: assets/images/talks/madisonphp-logo.png
+logo_link: http://www.meetup.com/madisonphp/events/159174062/
 tags:
     - usergroup
     - php

@@ -29,8 +29,9 @@ projects:
         </div>
     </header>
     <div class="container">
+        <div class="row">
             {% for project in page.projects %}
-                <div class="project clearfix {% if project.logo %}with-logo col-lg-6{% else %}col-lg-12{% endif %}">
+                <div class="project clearfix {% if project.logo %}with-logo col-md-6{% else %}col-md-12{% endif %}">
                     {% if project.logo %}
                         <div class="logo-wrapper">
                             <a href="{{ project.marketing }}"><img src="{{ site.url }}/{{ project.logo }}"></a>

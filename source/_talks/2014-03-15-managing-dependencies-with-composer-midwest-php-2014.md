@@ -1,6 +1,8 @@
 ---
 title: Managing Dependencies with Composer
 location: Midwest PHP 2014
+logo: assets/images/talks/midwestphp-logo.png
+logo_link: http://midwestphp.org/
 tags:
     - conference
     - composer

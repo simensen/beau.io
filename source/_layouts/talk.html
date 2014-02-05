@@ -1,6 +1,6 @@
 {% extends "base" %}
 {% block content %}
-<section id="talk">
+<section id="talk" class="talk">
     <header>
         <div class="container">
             <div class="header-container">
@@ -17,23 +17,51 @@
                 </div>
             </div>
         </div>
+    {% elseif page.logo %}
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <a href="{{ page.logo_link }}">
+                        <img src="{{ site.url }}/{{ page.logo }}" class="img-responsive" style="margin: 0 auto;">
+                    </a>
+                </div>
+            </div>
+        </div>
     {% endif %}
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
+                {% if page.slides_embed and page.logo %}
+                    <div class="logo">
+                        <a href="{{ page.logo_link }}">
+                            <img src="{{ site.url }}/{{ page.logo }}" class="img-responsive" style="margin: 0 auto;">
+                        </a>
+                    </div>
+                {% endif %}
                 <header>
-                    <h1>{{ page.title }}</h1>
-                    <h2>{{ page.location }}</h2>
-                    <h3>
+                    <h2>{{ page.title }}</h2>
+                    <h3>{{ page.location }}</h3>
+                    <h4>
                         {% if page.fuzzy_date %}
                             {{ page.date|date("F Y") }}
                         {% else %}
                             {{ page.date|date("F jS, Y") }}
                         {% endif %}
-                    </h3>
+                    </h4>
                 </header>
+
                 <div class="description">
                     {{ page.blocks.description|raw }}
+
+                    {% if page.joinedin %}
+                        <p>
+                            Read and write reviews for this talk!
+                            <a href="{{ page.joinedin }}">
+                                <img class="joinedin" src="{{ site.url }}/assets/images/talks/joinedin-logo.png">
+                            </a>
+                        </p>
+                    {% endif %}
+
                 </div>
                 <div class="tags">
                     {% for tag in page.tags %}
@@ -41,7 +69,8 @@
                     {% endfor %}
                 </div>
 
-                <br>
+
+                <br style="clear: both;">
                 <hr>
             </div>
         </div>

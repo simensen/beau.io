@@ -4,6 +4,8 @@ location: Madison PHP User Group
 slides: https://speakerdeck.com/simensen/managing-dependencies-with-composer-madison-php-october-2013
 slides_embed: <script async class="speakerdeck-embed" data-id="e30b7fe0197f0131a22c46e1acff672f" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 cover: assets/images/talks/2013-10-17-managing-dependencies-with-composer.jpg
+logo: assets/images/talks/madisonphp-logo.png
+logo_link: http://www.meetup.com/madisonphp/events/138754032/
 tags:
     - usergroup
     - composer
