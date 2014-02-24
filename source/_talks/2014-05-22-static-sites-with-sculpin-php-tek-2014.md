@@ -3,6 +3,7 @@ title: Static Sites with Sculpin
 location: "php[tek] 2014"
 logo: assets/images/talks/tek2014-logo.png
 logo_link: http://tek.phparch.com/speakers/#64644
+joinedin: https://joind.in/talk/view/10658
 tags:
     - conference
     - sculpin
