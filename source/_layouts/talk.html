@@ -69,6 +69,12 @@
                     {% endfor %}
                 </div>
 
+                {% if page.blocks.talk_cta %}
+                    <div class="well" style="clear: both; margin-top: 2em;">
+                        {{ page.blocks.talk_cta|raw }}
+                    </div>
+                {% endif %}
+
 
                 <br style="clear: both;">
                 <hr>
