@@ -22,3 +22,12 @@
         <meta property="og:image:height" content="{{ og.image.height }}"/>
     {% endif %}
 {% endif %}
+
+{% if og.title %}
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="{{ og.title|raw }}" />
+    <meta name="twitter:description" content="{{ og.description|raw }}" />
+    {% if og.image %}
+        <meta name="twitter:image" content="{{ og.image.url }}" />
+    {% endif %}
+{% endif %}
