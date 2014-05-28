@@ -17,6 +17,14 @@
                 </div>
             </div>
         </div>
+    {% elseif page.cover %}
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <img src="{{ site.url }}/{{ page.cover }}" class="img-responsive" style="margin: 0 auto;">
+                </div>
+            </div>
+        </div>
     {% elseif page.logo %}
         <div class="container">
             <div class="row">
@@ -31,7 +39,14 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                {% if page.slides_embed and page.logo %}
+
+                {% if page.blocks.talk_registration %}
+                    <div class="well" style="clear: both; margin-top: 2em;">
+                        {{ page.blocks.talk_registration|raw }}
+                    </div>
+                {% endif %}
+
+                {% if ( page.slides_embed or page.cover ) and page.logo %}
                     <div class="logo">
                         <a href="{{ page.logo_link }}">
                             <img src="{{ site.url }}/{{ page.logo }}" class="img-responsive" style="margin: 0 auto;">
