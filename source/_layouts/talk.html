@@ -46,6 +46,12 @@
                     </div>
                 {% endif %}
 
+                {% if page.blocks.talk_registration_no_well %}
+                    <div style="clear: both; margin-top: 2em;">
+                        {{ page.blocks.talk_registration_no_well|raw }}
+                    </div>
+                {% endif %}
+
                 {% if ( page.slides_embed or page.cover ) and page.logo %}
                     <div class="logo">
                         <a href="{{ page.logo_link }}">
@@ -70,7 +76,7 @@
 
                     {% if page.joinedin %}
                         <p>
-                            Read and write reviews for this talk!
+                            <a href="{{ page.joinedin }}">Read and write reviews</a> for this talk!
                             <a href="{{ page.joinedin }}">
                                 <img class="joinedin" src="{{ site.url }}/assets/images/talks/joinedin-logo.png">
                             </a>
@@ -90,6 +96,11 @@
                     </div>
                 {% endif %}
 
+                {% if page.blocks.talk_cta_no_well %}
+                    <div style="clear: both; margin-top: 2em;">
+                        {{ page.blocks.talk_cta_no_well|raw }}
+                    </div>
+                {% endif %}
 
                 <br style="clear: both;">
                 <hr>
@@ -115,4 +126,27 @@
         </div>
     </div>
 </section>
+{% endblock %}
+{% block scripts %}
+<script>
+(function () {
+    if (matchMedia) {
+        var $form = $('.ck_embed_form');
+
+        var listener = function (mq) {
+            if (mq.matches) {
+                $form.removeClass('ck_vertical_subscription_form');
+                $form.addClass('ck_horizontal_subscription_form');
+            } else {
+                $form.addClass('ck_vertical_subscription_form');
+                $form.removeClass('ck_horizontal_subscription_form');
+            }
+        };
+
+        var mq = window.matchMedia("(min-width: 630px)");
+        mq.addListener(listener);
+        listener(mq);
+    }
+})();
+</script>
 {% endblock %}

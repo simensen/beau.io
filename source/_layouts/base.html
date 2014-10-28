@@ -38,10 +38,10 @@
                 <ul class="nav navbar-nav" id="main-menu">
                     <li><a href="{{ site.url }}/" data-target="#welcome">Home</a></li>
                     <!--<li><a href="{{ site.url }}/news/">News</a></li>-->
+                    <li><a href="{{ site.url }}/consulting/">Consulting</a></li>
                     <li><a href="{{ site.url }}/projects/">Projects</a></li>
                     <li><a href="{{ site.url }}/talks/">Talks</a></li>
                     <li><a href="{{ site.url }}/experience/">Experience</a></li>
-                    <!--<li><a href="{{ site.url }}/contact/">Contact</a></li>-->
                     <li><a href="http://thatpodcast.io">That Podcast <i class="fa fa-external-link"></i></a></li>
                 </ul>
             </div><!--/.nav-collapse -->
@@ -212,6 +212,7 @@
         */
     });
     </script>
+    {% block scripts %}{% endblock %}
     {% if site.google_analytics_tracking_id %}
       <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

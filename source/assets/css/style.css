@@ -8,6 +8,15 @@
 	box-sizing: border-box;
 }
 
+/*
+.ck_embed_form.ck_horizontal_subscription_form {
+	max-width: 100%;
+}
+#ck_subscribe_form {
+	width: auto;
+}
+*/
+
 html,
 body {
 	margin: 0;
