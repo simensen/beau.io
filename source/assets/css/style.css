@@ -98,10 +98,17 @@ html.ios #background {
 #welcome header p {
 	letter-spacing: .2em;
 }
-#welcome ul.social-media {
+#welcome ul.social-media,
+#welcome ul.blogs {
 	list-style-type: none;
 	padding: 0;
 	margin: 3em 0;
+}
+
+#welcome ul.blogs li {
+	display: inline-block;
+
+	margin: 0 .125em;
 }
 
 #welcome ul.social-media li {
@@ -121,6 +128,14 @@ html.ios #background {
 	text-align: center;
 	width: 4em;
 	height: 4em;
+}
+
+#welcome ul.blogs li a {
+	color: #fff;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	padding: 0 .5em;
 }
 
 #welcome ul.social-media li a i {
