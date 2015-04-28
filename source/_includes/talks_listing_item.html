@@ -1,20 +1,30 @@
 <div class="talk clearfix" style="margin-bottom: 3em;">
     {% if talk.cover or talk.logo %}
         <div class="{% if talk.cover %}cover-image{% else %}logo{% endif %}">
-            <a href="{{ talk.url }}">
-                <img class="img-responsive" src="{{ site.url }}/{% if talk.cover %}{{ talk.cover }}{% else %}{{ talk.logo }}{% endif %}">
-            </a>
+            {% if not talk.fuzzy_date %}
+                <a href="{{ talk.url }}">
+            {% endif %}
+            <img class="img-responsive" src="{{ site.url }}/{% if talk.cover %}{{ talk.cover }}{% else %}{{ talk.logo }}{% endif %}">
+            {% if not talk.fuzzy_date %}
+                </a>
+            {% endif %}
         </div>
     {% endif %}
     <div>
         <header>
-            <h2><a href="{{ talk.url }}">{{ talk.title }}</a></h2>
+            <h2>
+                {% if talk.fuzzy_date %}
+                    {{ talk.title }}
+                {% else %}
+                    <a href="{{ talk.url }}">{{ talk.title }}</a>
+                {% endif %}
+            </h2>
             <h3>At {{ talk.location }}</h3>
             <h4>
-                on {% if talk.fuzzy_date %}
-                    {{ talk.date|date("F Y") }}
+                {% if talk.fuzzy_date %}
+                    in {{ talk.date|date("F Y") }}
                 {% else %}
-                    {{ talk.date|date("F jS, Y") }}
+                    on {{ talk.date|date("F jS, Y") }}
                 {% endif %}
             </h4>
         </header>
