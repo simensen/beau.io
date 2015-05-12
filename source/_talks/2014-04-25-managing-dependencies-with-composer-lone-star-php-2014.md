@@ -10,7 +10,7 @@ joinedin: https://joind.in/talk/view/10814
 tags:
     - conference
     - composer
-fuzzy_date: true
+#fuzzy_date: true
 meta:
     og:
         title: "Managing Dependencies with Composer &middot; Beau Simensen &middot; Dragonfly Development"
