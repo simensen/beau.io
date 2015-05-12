@@ -1,9 +1,9 @@
 ---
 title: Securing Your HTTP API with Hawk
 location: PHP Tour Luxembourg 2015
-#slides: https://speakerdeck.com/simensen/managing-dependencies-with-composer-php-world-2014
-#slides_embed: <script async class="speakerdeck-embed" data-id="123f86204bf401329b467e55d489251a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-#cover: assets/images/talks/2014-11-11-composer.jpg
+slides: https://speakerdeck.com/simensen/securing-your-http-api-with-hawk-php-tour-luxembourg-2015
+slides_embed: <script async class="speakerdeck-embed" data-id="577d1d19df624da685b0871b8d95f5e2" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+cover: assets/images/talks/2015-05-12-hawk.jpg
 logo: assets/images/talks/phptourluxembourg-logo.png
 logo_link: http://www.afup.org/pages/phptourluxembourg2015/sessions.php#1362
 #joinedin: https://joind.in/11908
