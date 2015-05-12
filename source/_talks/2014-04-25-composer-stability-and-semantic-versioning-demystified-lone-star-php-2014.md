@@ -11,7 +11,6 @@ tags:
     - conference
     - composer
     - semver
-fuzzy_date: true
 meta:
     og:
         title: "Composer: Stability and Semantic Versioning Demystified &middot; Beau Simensen &middot; Dragonfly Development"
