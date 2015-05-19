@@ -6,7 +6,7 @@ slides_embed: <script async class="speakerdeck-embed" data-id="577d1d19df624da68
 cover: assets/images/talks/2015-05-12-hawk.jpg
 logo: assets/images/talks/phptourluxembourg-logo.png
 logo_link: http://www.afup.org/pages/phptourluxembourg2015/sessions.php#1362
-#joinedin: https://joind.in/11908
+joinedin: https://joind.in/11908
 tags:
     - conference
     - tutorial

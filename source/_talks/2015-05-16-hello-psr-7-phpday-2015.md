@@ -1,24 +1,24 @@
 ---
 title: Hello, PSR-7.
 location: phpDay 2015
-#slides: https://speakerdeck.com/simensen/managing-dependencies-with-composer-php-world-2014
-#slides_embed: <script async class="speakerdeck-embed" data-id="123f86204bf401329b467e55d489251a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-#cover: assets/images/talks/2014-11-11-composer.jpg
+slides: https://speakerdeck.com/simensen/hello-psr-7-phpday-2015
+slides_embed: <script async class="speakerdeck-embed" data-id="05a55f49c0e34166a00e7c76a2a14bb0" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+cover: assets/images/talks/2015-05-16-psr7.jpg
 logo: assets/images/talks/phpday-2015-logo.png
 logo_link: http://2015.phpday.it/
-#joinedin: https://joind.in/11908
+joinedin: https://joind.in/14538
 tags:
     - conference
     - standards
     - php-fig
     - psr-7
-x-meta:
+meta:
     og:
         title: "Hello, PSR-7. &middot; Beau Simensen &middot; dflydev"
         description: "Say hello to your new best friend in PHP, PSR-7."
         type: website
         image:
-            url: https://beau.io/assets/images/talks/2014-11-11-composer.jpg
+            url: https://beau.io/assets/images/talks/2015-05-16-psr7.jpg
             width: 1920
             height: 1080
             type: image/jpg
