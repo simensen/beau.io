@@ -28,7 +28,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-#background {
+.page-home #background {
     background: #000 url("background.jpg") no-repeat;
     background-position: bottom;
     background-size: cover;
@@ -456,6 +456,12 @@ img.joinedin {
 		margin: 1.5em 0 2em 3em;
 		max-width: 33%;
 	}
+
+	.talk .logo--secondary {
+        margin-top: -1em;
+		max-width: 15%;
+    }
+
 	.talk .logo img {
 		max-height: 150px;
 	}

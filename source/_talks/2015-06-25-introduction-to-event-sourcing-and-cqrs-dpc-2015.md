@@ -2,24 +2,24 @@
 date: 2015-06-25 09:30
 title: Introduction to Event Sourcing and CQRS
 location: Dutch PHP Conference (DPC) 2015
-#slides: https://speakerdeck.com/simensen/managing-dependencies-with-composer-php-world-2014
-#slides_embed: <script async class="speakerdeck-embed" data-id="123f86204bf401329b467e55d489251a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-#cover: assets/images/talks/2014-11-11-composer.jpg
+slides: https://speakerdeck.com/simensen/introduction-to-event-sourcing-and-cqrs-dpc-2015
+slides_embed: <script async class="speakerdeck-embed" data-id="577c4507101e49d1ad90af23bf31ff4c" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+cover: assets/images/talks/2015-06-25-es-cqrs-morning.jpg
 logo: assets/images/talks/dpc-2015-logo.jpg
 logo_link: http://www.phpconference.nl/speakers#beau-simensen
-#joinedin: https://joind.in/11908
+joinedin: https://joind.in/14190
 tags:
     - conference
     - tutorial
     - event-sourcing
     - cqrs
-x-meta:
+meta:
     og:
         title: "Introduction to Event Sourcing and CQRS &middot; Beau Simensen &middot; dflydev"
         description: "Learn the basics of CQRS and how Event Sourcing can be used to enable CQRS."
         type: website
         image:
-            url: https://beau.io/assets/images/talks/2014-11-11-composer.jpg
+            url: https://beau.io/assets/images/talks/2015-06-25-es-cqrs-morning.jpg
             width: 1920
             height: 1080
             type: image/jpg

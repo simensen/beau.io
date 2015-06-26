@@ -1,24 +1,24 @@
 ---
 title: Hello, PSR-7.
-location: Dutch PHP Conference (DPC) 2015
-slides: https://speakerdeck.com/simensen/hello-psr-7-dpc-2015
-slides_embed: <script async class="speakerdeck-embed" data-id="c6e918ef8a1c49868c7c13bc0afc8654" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-cover: assets/images/talks/2015-06-26-psr7.jpg
-logo: assets/images/talks/dpc-2015-logo.jpg
-logo_link: http://www.phpconference.nl/speakers#beau-simensen
-joinedin: https://joind.in/14224
+location: php[world] 2015
+#slides: https://speakerdeck.com/simensen/managing-dependencies-with-composer-php-world-2014
+#slides_embed: <script async class="speakerdeck-embed" data-id="123f86204bf401329b467e55d489251a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+#cover: assets/images/talks/2014-11-11-composer.jpg
+logo: assets/images/talks/phpworld-2015-logo.png
+logo_link: https://world.phparch.com/speakers/#64644
+#joinedin: https://joind.in/11908
 tags:
     - conference
     - standards
     - php-fig
     - psr-7
-meta:
+x-meta:
     og:
         title: "Hello, PSR-7. &middot; Beau Simensen &middot; dflydev"
         description: "Say hello to your new best friend in PHP, PSR-7."
         type: website
         image:
-            url: https://beau.io/assets/images/talks/2015-06-26-psr7.jpg
+            url: https://beau.io/assets/images/talks/2014-11-11-composer.jpg
             width: 1920
             height: 1080
             type: image/jpg

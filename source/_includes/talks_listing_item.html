@@ -1,5 +1,20 @@
 <div class="talk clearfix" style="margin-bottom: 3em;">
-    {% if talk.cover or talk.logo %}
+    {% if talk.cover and talk.logo %}
+        <div class="cover-image">
+            {% if not talk.fuzzy_date %}
+                <a href="{{ talk.url }}">
+            {% endif %}
+            <img class="img-responsive" src="{{ site.url }}/{{ talk.cover }}">
+            {% if not talk.fuzzy_date %}
+                </a>
+            {% endif %}
+        </div>
+        <div class="logo logo--secondary" style="clear: right;">
+            <a href="{{ talk.logo_link }}">
+            <img class="img-responsive" src="{{ site.url }}/{{ talk.logo }}">
+            </a>
+        </div>
+    {% elseif talk.cover or talk.logo %}
         <div class="{% if talk.cover %}cover-image{% else %}logo{% endif %}">
             {% if not talk.fuzzy_date %}
                 <a href="{{ talk.url }}">
