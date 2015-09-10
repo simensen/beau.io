@@ -1,12 +1,12 @@
 ---
 title: Hello, PSR-7.
-location: "Symfony Live! London 2015"
+location: PHPNW15
 #slides: https://speakerdeck.com/simensen/managing-dependencies-with-composer-php-world-2014
 #slides_embed: <script async class="speakerdeck-embed" data-id="123f86204bf401329b467e55d489251a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 #cover: assets/images/talks/2014-11-11-composer.jpg
-logo: assets/images/talks/sflive-london-2015.png
-logo_link: http://london2015.live.symfony.com/schedule/
-joinedin: https://joind.in/14975
+logo: assets/images/talks/phpnw15-logo.png
+logo_link: http://conference.phpnw.org.uk/phpnw15/
+#joinedin: https://joind.in/14975
 tags:
     - conference
     - standards
