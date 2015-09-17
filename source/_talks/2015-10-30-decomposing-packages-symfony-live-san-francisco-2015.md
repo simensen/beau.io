@@ -1,5 +1,4 @@
 ---
-fuzzy_date: true
 title: Decomposing Packages
 location: "Symfony Live! San Francisco 2015"
 #slides: https://speakerdeck.com/simensen/managing-dependencies-with-composer-php-world-2014
