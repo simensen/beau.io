@@ -6,7 +6,7 @@ location: PHPNW15
 #cover: assets/images/talks/2014-11-11-composer.jpg
 logo: assets/images/talks/phpnw15-logo.png
 logo_link: http://conference.phpnw.org.uk/phpnw15/
-#joinedin: https://joind.in/14975
+joinedin: https://joind.in/15438
 tags:
     - conference
     - standards
