@@ -6,7 +6,7 @@ slides_embed: <script async class="speakerdeck-embed" data-id="0474c897447649e59
 cover: assets/images/talks/2015-10-13-psr7.jpg
 logo: assets/images/talks/phpugffm-logo.jpg
 logo_link: http://www.phpugffm.de/veranstaltungen-2/phpugffm-vi2015/
-#joinedin: https://joind.in/14975
+joinedin: https://joind.in/15451
 tags:
     - usergroup
     - standards
