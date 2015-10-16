@@ -3,7 +3,7 @@ title: Hello, PSR-7.
 location: "Symfony Live! Berlin 2015"
 #slides: https://speakerdeck.com/simensen/managing-dependencies-with-composer-php-world-2014
 #slides_embed: <script async class="speakerdeck-embed" data-id="123f86204bf401329b467e55d489251a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-#cover: assets/images/talks/2014-11-11-composer.jpg
+cover: assets/images/talks/2015-10-16-psr7.jpg
 logo: assets/images/talks/sfl_berlin2015.png
 logo_link: http://berlin2015.live.symfony.com/
 joinedin: https://joind.in/14975
@@ -12,13 +12,13 @@ tags:
     - standards
     - php-fig
     - psr-7
-x-meta:
+meta:
     og:
         title: "Hello, PSR-7. &middot; Beau Simensen &middot; dflydev"
         description: "Say hello to your new best friend in PHP, PSR-7."
         type: website
         image:
-            url: https://beau.io/assets/images/talks/2014-11-11-composer.jpg
+            url: https://beau.io/assets/images/talks/2015-10-16-psr7.jpg
             width: 1920
             height: 1080
             type: image/jpg
