@@ -1,8 +1,8 @@
 ---
 title: Hello, PSR-7.
 location: "Symfony Live! Berlin 2015"
-#slides: https://speakerdeck.com/simensen/managing-dependencies-with-composer-php-world-2014
-#slides_embed: <script async class="speakerdeck-embed" data-id="123f86204bf401329b467e55d489251a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+slides: https://speakerdeck.com/simensen/hello-psr-7-symfony-live-berlin-2015
+slides_embed: <script async class="speakerdeck-embed" data-id="16e0c2e877724188a788bbbd420ed3f0" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 cover: assets/images/talks/2015-10-16-psr7.jpg
 logo: assets/images/talks/sfl_berlin2015.png
 logo_link: http://berlin2015.live.symfony.com/

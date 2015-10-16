@@ -1,8 +1,8 @@
 ---
 title: Decomposing Packages
 location: "Symfony Live! Berlin 2015"
-#slides: https://speakerdeck.com/simensen/managing-dependencies-with-composer-php-world-2014
-#slides_embed: <script async class="speakerdeck-embed" data-id="123f86204bf401329b467e55d489251a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+slides: https://speakerdeck.com/simensen/decomposing-packages-symfony-live-berlin-2015
+slides_embed: <script async class="speakerdeck-embed" data-id="98c3aed96ee4428fb4fa3cfec819509e" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 cover: assets/images/talks/2015-10-15-decomposer.jpg
 logo: assets/images/talks/sfl_berlin2015.png
 logo_link: http://berlin2015.live.symfony.com/
