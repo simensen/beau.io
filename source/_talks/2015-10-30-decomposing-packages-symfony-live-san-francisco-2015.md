@@ -1,23 +1,23 @@
 ---
 title: Decomposing Packages
 location: "Symfony Live! San Francisco 2015"
-#slides: https://speakerdeck.com/simensen/managing-dependencies-with-composer-php-world-2014
-#slides_embed: <script async class="speakerdeck-embed" data-id="123f86204bf401329b467e55d489251a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-#cover: assets/images/talks/2014-11-11-composer.jpg
+slides: https://speakerdeck.com/simensen/decomposing-packages-symfony-live-san-francisco-2015
+slides_embed: <script async class="speakerdeck-embed" data-id="ad109d64a866456bbc926e4cd8ee524b" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+cover: assets/images/talks/2015-10-30-decomposer.jpg
 logo: assets/images/talks/sfl_sanfrancisco2015.png
 logo_link: http://sanfrancisco2015.live.symfony.com/
-#joinedin: https://joind.in/14975
+joinedin: https://joind.in/16047
 tags:
     - conference
     - composer
     - decomposer
-x-meta:
+meta:
     og:
         title: "Decomposing Packages &middot; Beau Simensen &middot; dflydev"
         description: "Using 3rd-party code isn't always painless."
         type: website
         image:
-            url: https://beau.io/assets/images/talks/2014-11-11-composer.jpg
+            url: https://beau.io/assets/images/talks/2015-10-30-decomposer.jpg
             width: 1920
             height: 1080
             type: image/jpg
