@@ -1,6 +1,6 @@
 ---
 title: Hello, PSR-7.
-location: PHPNW15
+location: PHPNW 2015
 slides: https://speakerdeck.com/simensen/hello-psr-7-phpnw15
 slides_embed: <script async class="speakerdeck-embed" data-id="763d900a37e8455f844ff1bde27099b3" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 cover: assets/images/talks/2015-10-03-hello-psr7.jpg

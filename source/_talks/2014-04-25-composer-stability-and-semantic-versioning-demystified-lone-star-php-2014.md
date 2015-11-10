@@ -1,6 +1,6 @@
 ---
 title: "Composer: Stability and Semantic Versioning Demystified"
-location: Lone Star PHP
+location: Lone Star PHP 2014
 slides: https://speakerdeck.com/simensen/composer-stability-and-semantic-versioning-demystified-lone-star-php-2014
 slides_embed: <script async class="speakerdeck-embed" data-id="5b40f9f0af3501316b06561d5e0fcbd3" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 cover: assets/images/talks/2014-04-26-composer-stability-and-semantic-versioning-demystified.jpg

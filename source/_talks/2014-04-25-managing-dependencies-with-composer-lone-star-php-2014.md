@@ -1,6 +1,6 @@
 ---
 title: Managing Dependencies with Composer
-location: Lone Star PHP
+location: Lone Star PHP 2014
 slides: https://speakerdeck.com/simensen/managing-dependencies-with-composer-lone-star-php-2014
 slides_embed: <script async class="speakerdeck-embed" data-id="151d4da0af35013157f056ebe6298001" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 cover: assets/images/talks/2014-04-26-managing-dependencies-with-composer.jpg

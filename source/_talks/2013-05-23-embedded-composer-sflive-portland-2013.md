@@ -1,6 +1,6 @@
 ---
 title: Embedded Composer
-location: Symfony Live Portland 2013
+location: Symfony Live! Portland 2013
 slides: https://speakerdeck.com/simensen/embedded-composer-sflive-portland-2013
 slides_embed: <script async class="speakerdeck-embed" data-id="e30331a0a5a7013000c042db8da5a4ed" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 audio_slides: http://www.youtube.com/watch?v=9CSovVvRwXk

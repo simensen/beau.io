@@ -1,0 +1,103 @@
+---
+layout: default
+title: Conferences
+use: [talks]
+meta:
+    description: "Where I will be speaking in the future and where I have spoken in the past."
+    keywords:
+        - talks
+        - presenting
+        - conferences
+        - speaking
+        - speaking engagements
+        - resume
+        - cv
+        - user groups
+        - public speaking
+        - speaches
+    og:
+        title: "Beau Simensen &middot; Speaking Engagements"
+        description: "Where I will be speaking in the future and where I have spoken in the past."
+        type: article
+        image:
+            url: http://beau.io/assets/images/beau-seattle-large.jpg
+            width: 2000
+            height: 960
+            type: image/jpg
+
+---
+<section id="talks">
+    {% set now = "now"|date_modify("-2 day")|date("U") %}
+
+    {% set found = false %}
+    {% set conference = '' %}
+    {% set year = '' %}
+    {% for talk in data.talks|reverse if talk.date >= now %}
+        {% if loop.first %}
+            <header>
+                <div class="container">
+                    <div class="header-container">
+                        <h1>Upcoming Conferences and Events</h1>
+                        <p>Where I will be speaking in the future.</p>
+                    </div>
+                </div>
+            </header>
+            <div class="container">
+            {% set found = true %}
+        {% endif %}
+        {% if year != talk.date|date('Y') %}
+            {% set year = talk.date|date('Y') %}
+            {% if not loop.first %}
+                <br><br>
+                <hr>
+            {% endif %}
+            <h1>{{ year }}</h1>
+        {% endif %}
+        {% if conference != talk.location %}
+            {% if not loop.first %}
+            {% endif %}
+            <h2>{{ talk.location }}</h2>
+            {% set conference = talk.location %}
+        {% endif %}
+        <div> • <a href="{{ talk.url }}">{{ talk.title }}</a></div>
+    {% endfor %}
+    {% if found %}
+        </div>
+    {% endif %}
+
+    {% set found = false %}
+    {% set conference = '' %}
+    {% set year = '' %}
+    {% for talk in data.talks if talk.date < now %}
+        {% if loop.first %}
+            <header>
+                <div class="container">
+                    <div class="header-container">
+                        <h1>Past Conferences and Events</h1>
+                        <p>Where I have spoken in the past.</p>
+                    </div>
+                </div>
+            </header>
+            <div class="container">
+            {% set found = true %}
+        {% endif %}
+        {% if year != talk.date|date('Y') %}
+            {% set year = talk.date|date('Y') %}
+            {% if not loop.first %}
+                <br><br>
+                <hr>
+            {% endif %}
+            <h1>{{ year }}</h1>
+        {% endif %}
+        {% if conference != talk.location %}
+            {% if not loop.first %}
+            {% endif %}
+            <h2>{{ talk.location }}</h2>
+            {% set conference = talk.location %}
+        {% endif %}
+        <div> • <a href="{{ talk.url }}">{{ talk.title }}</a></div>
+    {% endfor %}
+    {% if found %}
+        </div>
+    {% endif %}
+</section>
