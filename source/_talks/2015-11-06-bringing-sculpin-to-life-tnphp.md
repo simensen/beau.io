@@ -1,6 +1,6 @@
 ---
 title: "An Open Source Story: Bringing Sculpin to Life"
-location: True North PHP 2015
+location: True North PHP Toronto 2015
 slides: https://speakerdeck.com/simensen/an-open-source-story-bringing-sculpin-to-life-true-north-php-2015
 slides_embed: <script async class="speakerdeck-embed" data-id="6c74b8ff213542faa529a00e92d37a8d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 cover: assets/images/talks/2015-11-06-sculpin.jpg

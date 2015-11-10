@@ -1,6 +1,6 @@
 ---
 title: Managing Dependencies with Composer
-location: True North PHP 2015
+location: True North PHP Toronto 2015
 slides: https://speakerdeck.com/simensen/managing-dependencies-with-composer-tnphp15
 slides_embed: <script async class="speakerdeck-embed" data-id="59fe5817faa241e3aa79e935ad7ca87d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 cover: assets/images/talks/2015-11-04-composer.jpg
