@@ -1,6 +1,6 @@
 ---
 title: Introduction to Event Sourcing and CQRS with Broadway
-location: phpDay 2015
+location: phpDay Verona, IT 2015
 slides: https://speakerdeck.com/simensen/introduction-to-event-sourcing-and-cqrs-with-broadway-phpday-verona-2015
 slides_embed: <script async class="speakerdeck-embed" data-id="620aff94e6224af3bb1112ce94a1e1a1" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 cover: assets/images/talks/2015-05-15-broadway.jpg

@@ -1,7 +1,7 @@
 ---
 date: 2015-06-25 09:30
 title: Introduction to Event Sourcing and CQRS
-location: Dutch PHP Conference (DPC) 2015
+location: Dutch PHP Conference (DPC) Amsterdam 2015
 slides: https://speakerdeck.com/simensen/introduction-to-event-sourcing-and-cqrs-dpc-2015
 slides_embed: <script async class="speakerdeck-embed" data-id="577c4507101e49d1ad90af23bf31ff4c" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 cover: assets/images/talks/2015-06-25-es-cqrs-morning.jpg

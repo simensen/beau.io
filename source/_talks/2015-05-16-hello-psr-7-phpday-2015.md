@@ -1,6 +1,6 @@
 ---
 title: Hello, PSR-7.
-location: phpDay 2015
+location: phpDay Verona, IT 2015
 slides: https://speakerdeck.com/simensen/hello-psr-7-phpday-2015
 slides_embed: <script async class="speakerdeck-embed" data-id="05a55f49c0e34166a00e7c76a2a14bb0" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 cover: assets/images/talks/2015-05-16-psr7.jpg

@@ -1,6 +1,6 @@
 ---
 title: "Say What? Ubiquitous Language and You!"
-location: "PHPBenelux 2015"
+location: "PHPBenelux Antwerp 2015"
 slides: https://speakerdeck.com/simensen/say-what-ubiquitous-language-and-you-php-benelux-2015
 slides_embed: <script async class="speakerdeck-embed" data-id="bc2f417085ce013231a14aa175d937e4" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 cover: assets/images/talks/2015-01-24-say-what.jpg

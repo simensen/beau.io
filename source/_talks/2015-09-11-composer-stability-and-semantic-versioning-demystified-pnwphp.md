@@ -1,6 +1,6 @@
 ---
 title: "Composer: Stability and Semantic Versioning Demystified"
-location: PNWPHP 2015
+location: PNWPHP Seattle 2015
 slides: https://speakerdeck.com/simensen/composer-stability-and-semantic-versioning-demystified-pnwphp-2015
 slides_embed: <script async class="speakerdeck-embed" data-id="968e1295ec1a4642b3b7a15e878ed6af" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 cover: assets/images/talks/2015-09-11-composer.jpg

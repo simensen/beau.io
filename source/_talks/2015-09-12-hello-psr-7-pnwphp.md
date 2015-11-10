@@ -1,6 +1,6 @@
 ---
 title: Hello, PSR-7.
-location: PNWPHP 2015
+location: PNWPHP Seattle 2015
 slides: https://speakerdeck.com/simensen/hello-psr-7-pnwphp-2015
 slides_embed: <script async class="speakerdeck-embed" data-id="0e309785b7ad4448bda9e969025dede1" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 cover: assets/images/talks/2015-09-12-psr7.jpg

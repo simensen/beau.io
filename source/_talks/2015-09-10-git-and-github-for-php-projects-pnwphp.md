@@ -1,6 +1,6 @@
 ---
 title: Git and GitHub for PHP Projects
-location: PNWPHP 2015
+location: PNWPHP Seattle 2015
 slides: https://speakerdeck.com/simensen/git-and-github-for-php-projects-pnwphp-2015
 slides_embed: <script async class="speakerdeck-embed" data-id="2307106c041941bb9bd8b8f6a40c9039" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 cover: assets/images/talks/2015-09-10-git-and-github.jpg
