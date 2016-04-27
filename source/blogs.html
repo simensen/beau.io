@@ -1,0 +1,47 @@
+---
+layout: default
+title: Blogs
+subtitle: Where I write
+blogs:
+    -
+        name: ddd.io
+        website: http://ddd.io
+        description: Exploring Domain-Driven Design, CQRS (Command Query Responsibility Segregation), and Event Sourcing.
+        logo: assets/images/blogs/ddd_io.png
+    -
+        name: Source Maven
+        website: http://srcmvn.com
+        description: Life in OSS (Open-Source Software), Community, Conferences and Speaking.
+        logo: assets/images/blogs/srcmvn.png
+
+---
+{% block content %}
+<section id="projects">
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <h1>{{ page.title }}</h1>
+                <p>{{ page.subtitle }}</p>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            {% for blog in page.blogs %}
+                <div class="project clearfix {% if blog.logo %}with-logo col-md-6{% else %}col-md-12{% endif %}">
+                  {% if blog.logo %}
+                      <div class="logo-wrapper">
+                          <a href="{{ blog.website }}"><img src="{{ site.url }}/{{ blog.logo }}"></a>
+                      </div>
+                  {% endif %}
+                    <div class="project-meta">
+                        <h2><a href="{{ blog.website }}">{{ blog.name }}</a></h2>
+                        <a href="{{ blog.website }}">{{ blog.website }}</a>
+                         <p>{{ blog.description }}</p>
+                     </div>
+                 </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}
