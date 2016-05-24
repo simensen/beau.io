@@ -2,7 +2,9 @@
     "require": {
         "components/bootstrap": "3.0.3",
         "components/font-awesome": "4.0.3",
-        "components/jquery": "1.9.1"
+        "components/jquery": "1.9.1",
+        "sculpin/sculpin": "^2.1@dev",
+        "dflydev/embedded-composer": "^1.0@dev"
     },
     "config": {
         "component-dir": "source/components"
