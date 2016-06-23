@@ -6,7 +6,7 @@ location: Nomad PHP EU
 #cover: assets/images/talks/2016-01-29-es-cqrs.jpg
 logo: assets/images/talks/nomadphp-europ-logo.png
 logo_link: https://nomadphp.com/introduction-event-sourcing-cqrs/
-#joinedin: http://joind.in/talk/view/16825
+joinedin: https://joind.in/event/nomad-php-june-2016-us/introduction-to-event-sourcing-and-cqrs
 registration_link: //eventbrite.com/tickets-external?eid=24485423561&#038;ref=etckt
 tags:
     - conference
