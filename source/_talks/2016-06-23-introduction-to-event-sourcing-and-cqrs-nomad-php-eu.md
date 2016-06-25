@@ -1,9 +1,9 @@
 ---
 title: Introduction to Event Sourcing and CQRS
 location: Nomad PHP EU
-#slides: https://speakerdeck.com/simensen/introduction-to-event-sourcing-and-cqrs-with-broadway-php-benelux-2016
-#slides_embed: <script async class="speakerdeck-embed" data-id="b400e40510b94e2f8a7afc9696ca020b" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-#cover: assets/images/talks/2016-01-29-es-cqrs.jpg
+slides: https://speakerdeck.com/simensen/introduction-to-event-sourcing-and-cqrs-nomad-php-eu
+slides_embed: <script async class="speakerdeck-embed" data-id="1ffcabe90b99494b92f9df7ece9d978d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+cover: assets/images/talks/2016-06-23-es-cqrs.png
 logo: assets/images/talks/nomadphp-europ-logo.png
 logo_link: https://nomadphp.com/introduction-event-sourcing-cqrs/
 joinedin: https://joind.in/event/nomad-php-june-2016-us/introduction-to-event-sourcing-and-cqrs
@@ -13,15 +13,15 @@ tags:
     - event-sourcing
     - cqrs
 meta:
-    x-og:
+    og:
         title: "Introduction to Event Sourcing and CQRS &middot; Beau Simensen &middot; Monii"
         description: "Learn the basics of CQRS and how Event Sourcing can be used to enable CQRS."
         type: website
         image:
-            url: https://beau.io/assets/images/talks/2016-01-29-es-cqrs.jpg
-            width: 1920
-            height: 1080
-            type: image/jpg
+            url: https://beau.io/assets/images/talks/2016-06-23-es-cqrs.png
+            width: 1280
+            height: 720
+            type: image/png
 
 ---
 {% block description %}
