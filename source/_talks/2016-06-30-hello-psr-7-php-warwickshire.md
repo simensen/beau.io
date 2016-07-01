@@ -1,24 +1,24 @@
 ---
 title: Hello, PSR-7.
 location: PHP Warwickshire
-#slides: https://speakerdeck.com/simensen/hello-psr-7-php-benelux-2016
-#slides_embed: <script async class="speakerdeck-embed" data-id="cec2c3f06f954d68a0b7b6d316a28726" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-#cover: assets/images/talks/2016-01-30-psr7.jpg
+slides: https://speakerdeck.com/simensen/hello-psr-7-phpwarks-2016
+slides_embed: <script async class="speakerdeck-embed" data-id="aadeaf688f674318909e83312e99cb27" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+cover: assets/images/talks/2016-06-30-psr7.png
 logo: assets/images/talks/phpwarks.jpg
 logo_link: http://www.meetup.com/PHP-Warwickshire/events/231617759/
-#joinedin: https://joind.in/talk/58c66
+joinedin: https://joind.in/talk/aef0a
 tags:
     - usergroup
     - standards
     - php-fig
     - psr-7
 meta:
-    x-og:
+    og:
         title: "Hello, PSR-7. &middot; Beau Simensen &middot; dflydev"
         description: "Say hello to your new best friend in PHP, PSR-7."
         type: website
         image:
-            url: https://beau.io/assets/images/talks/2016-01-30-psr7.jpg
+            url: https://beau.io/assets/images/talks/2016-06-30-psr7.png
             width: 1280
             height: 720
             type: image/jpg
