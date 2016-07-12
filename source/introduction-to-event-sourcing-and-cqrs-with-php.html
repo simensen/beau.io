@@ -1,0 +1,155 @@
+---
+permalink: pretty
+---
+<html>
+<head>
+    <title>"Introduction to Event Sourcing and CQRS with PHP" by Beau Simensen</title>
+    <style>
+        .clearfix:after {
+            content:"";
+            display:block;
+            clear:both;
+        }
+
+        * {
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 1em;
+        }
+
+        header.site {
+            margin-bottom: 3em;
+        }
+
+        header.site h1, header.site h2 {
+            font-family: sans-serif;
+        }
+
+        header.site h1 {
+            font-size: 1.5em;
+        }
+
+        header.site h2 {
+            font-size: 1.125em;
+            font-weight: lighter;
+        }
+
+        p {
+            font-family: serif;
+        }
+
+        section {
+            margin: 3em 0;
+        }
+
+        footer.site {
+            margin: 3em 0;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        img.avatar {
+            display: block;
+            margin: 0 auto;
+            width: 200px;
+            border-radius: 50%;
+            border-width: .5em;
+            border-color: white;
+            border-style: solid;
+            -webkit-box-shadow: 0 0 .125em  #aaa;
+            -moz-box-shadow: 0 0 .125em  #aaa;
+            box-shadow: 0 0 .125em  #aaa;
+        }
+
+        @media only screen and (min-width: 1024px) {
+            .content {
+                max-width: 900px;
+                margin: 0 auto;
+            }
+
+            header.site {
+                margin: 5em 0;
+            }
+            footer.site {
+                margin: 5em 0;
+            }
+
+            section {
+                margin: 5em 0;
+            }
+
+            header.site h1 {
+                font-size: 4em;
+                text-align: center;
+                font-weight: normal;
+            }
+
+            header.site h2 {
+                font-size: 1.5em;
+                text-align: center;
+                margin-left: 5em;
+                margin-right: 5em;
+            }
+
+            img.avatar {
+                float: left;
+                margin-left: 5em;
+                margin-right: 5em;
+            }
+
+            section.avatar p {
+                margin-right: 5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <header class="site">
+            <h1>Using Event Sourcing and CQRS with PHP.</h1>
+            <h2>Learn how to future-proof your data with Event Sourcing and make your PHP application more nimble with CQRS.</h2>
+        </header>
+        <hr>
+        <section>
+            <p>"Introduction to Event Sourcing and CQRS with PHP" takes you on a journey to introduce Event Sourcing and CQRS principles to a traditional PHP application.</p>
+        </section>
+        <hr>
+        <section>
+            <script async id="_ck_75094" src="https://forms.convertkit.com/75094?v=5"></script>
+        </section>
+        <hr>
+        <section class="avatar clearfix">
+            <img class="avatar" src="/assets/images/beau.png" width="400" height="400">
+            <h2>About the author</h2>
+            <p>
+                Hi! I'm Beau Simensen, Co-Founder and Software Architect for Monii (<a href="http://monii.com">monii.com</a>, <a href="http://monii.io">monii.io</a>) and co-host of That Podcast (<a href="https://twitter.com/thatpodcast">@thatpodcast</a>, <a href="http://thatpodcast.io">thatpodcast.io</a>). I created Sculpin (<a href="https://sculpin.io">sculpin.io</a>) and helped create Stack PHP (<a href="http://stackphp.com">stackphp.com</a>).
+            </p>
+            <p>
+                I share what I know at <a href="/talks">conferences and user groups</a>. I'm a proponent of framework agnostic code. <a href="/talks/2016/06/25/unglue-all-the-things-dpc-2016">Unglue all the things!</a>
+            </p>
+        </section>
+        <hr>
+        <footer class="site">
+            &copy; {{ "now"|date("Y") }} Beau Simensen
+        </footer>
+    </div>
+    {% if site.google_analytics_tracking_id %}
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', '{{ site.google_analytics_tracking_id }}', 'beau.io');
+        ga('send', 'pageview');
+    </script>
+    {% endif %}
+</body>
+</html>
