@@ -55,10 +55,14 @@ permalink: pretty
             height: auto;
         }
 
+        img.book,
         img.avatar {
             display: block;
             margin: 0 auto;
             width: 200px;
+
+        }
+        img.avatar {
             border-radius: 50%;
             border-width: .5em;
             border-color: white;
@@ -98,12 +102,18 @@ permalink: pretty
                 margin-right: 5em;
             }
 
+            img.book,
             img.avatar {
                 float: left;
                 margin-left: 5em;
                 margin-right: 5em;
+                width: 250px;
             }
 
+            section.book p:first-of-type {
+                padding-top: 2em;
+            }
+            section.book p,
             section.avatar p {
                 margin-right: 5em;
             }
@@ -113,12 +123,14 @@ permalink: pretty
 <body>
     <div class="content">
         <header class="site">
-            <h1>Using Event Sourcing and CQRS with PHP.</h1>
+            <h1>Implementing Event Sourcing and CQRS with PHP.</h1>
             <h2>Learn how to future-proof your data with Event Sourcing and make your PHP application more nimble with CQRS.</h2>
         </header>
         <hr>
-        <section>
-            <p>"Introduction to Event Sourcing and CQRS with PHP" takes you on a journey to introduce Event Sourcing and CQRS principles to a traditional PHP application.</p>
+        <section class="book clearfix">
+            <img class="book" src="/assets/images/books/introduction-to-event-sourcing-and-cqrs-with-php.png">
+            <p>"Introduction to Event Sourcing and CQRS with PHP" is a book that takes you on a journey introducing Event Sourcing and CQRS principles to traditional PHP applications.</p>
+            <p>Learn what Event Sourcing is and how it can future-proof your application by keeping track of every change made to your model. Find out what CQRS (Command-Query Responsibility Segregation) is and how it can make your application more flexible.</p>
         </section>
         <hr>
         <section>
@@ -132,8 +144,38 @@ permalink: pretty
                 Hi! I'm Beau Simensen, Co-Founder and Software Architect for Monii (<a href="http://monii.com">monii.com</a>, <a href="http://monii.io">monii.io</a>) and co-host of That Podcast (<a href="https://twitter.com/thatpodcast">@thatpodcast</a>, <a href="http://thatpodcast.io">thatpodcast.io</a>). I created Sculpin (<a href="https://sculpin.io">sculpin.io</a>) and helped create Stack PHP (<a href="http://stackphp.com">stackphp.com</a>).
             </p>
             <p>
-                I share what I know at <a href="/talks">conferences and user groups</a>. I'm a proponent of framework agnostic code. <a href="/talks/2016/06/25/unglue-all-the-things-dpc-2016">Unglue all the things!</a>
+                I found Domain-Driven Design in 2007 and it forever changed the way I saw software. Over the last year and a half I've been invited to present workshops on Event Sourcing and CQRS at conferences in the United States of America, the Netherlands, Belgium and Spain.
             </p>
+        </section>
+        <hr>
+        <section>
+            <h2>Frequently Asked Questions</h2>
+
+            <h3>Will you discuss Event Sourcing and CQRS framework X?</h3>
+
+            <p>
+                This book focusses on more-or-less pure PHP Event Sourcing and CQRS implementations. While the book may mention or provide adapters for some off-the-shelf Event Sourcing and CQRS PHP frameworks a lot of time will not be spent going into detail on them.
+            </p>
+
+            <h3>
+                How much focus is there on strategy versus tactics?
+            </h3>
+
+            <p>
+                Seasoned Domain-Driven Design veterans may be hoping to see a lot of focus spent on strategy. If you are looking for anything more than an in-depth look into the tactics of bringing Event Sourcing and CQRS to your PHP application you are going to be disappointed.
+            </p>
+
+            <p>
+                Don't get me wrong! I think that strategy is <strong>hugely</strong> important! For the purpose of this book, however, the strategy behind the examples are all assumed to be business correct and very little discussion will revolve around how modeling decisions were made unless it relates directly to changes in the tactical implementation.
+            </p>
+
+            <h3>Do I need to be a DDD expert?</h3>
+
+            <p><strong>NO!</strong> Though knowledge of DDD (Domain-Driven Design) and its tactical patterns may help.</p>
+
+            <h3>What if I have other questions?</h3>
+
+            <p>Email me! <a href="mailto:beau@beau.io">beau@beau.io</a></p>
         </section>
         <hr>
         <footer class="site">
