@@ -59,9 +59,32 @@ permalink: pretty
         img.avatar {
             display: block;
             margin: 0 auto;
-            width: 200px;
-
         }
+
+        .author img.avatar {
+            width: 200px;
+        }
+
+        .sp img.avatar {
+            width: 150px;
+        }
+
+
+        .sp blockquote p:first-of-type::before {
+            content: '\201C';
+            margin-left: -.75em;
+        }
+
+        .sp blockquote p:first-of-type::after {
+            content: '\201D';
+            margin-left: .25em;
+        }
+
+        .sp blockquote p:first-of-type::before,
+        .sp blockquote p:first-of-type::after {
+            position: absolute;
+        }
+
         img.avatar {
             border-radius: 50%;
             border-width: .5em;
@@ -70,6 +93,15 @@ permalink: pretty
             -webkit-box-shadow: 0 0 .125em  #aaa;
             -moz-box-shadow: 0 0 .125em  #aaa;
             box-shadow: 0 0 .125em  #aaa;
+        }
+
+        blockquote footer cite {
+            margin-left: 1.5em;
+        }
+
+        blockquote footer::before {
+            position: absolute;
+            content: '\2014 \00A0';
         }
 
         @media only screen and (min-width: 1024px) {
@@ -105,14 +137,25 @@ permalink: pretty
             img.book,
             img.avatar {
                 float: left;
-                margin-left: 5em;
-                margin-right: 5em;
                 width: 250px;
             }
 
+            img.book,
+            .author img.avatar {
+                margin-left: 5em;
+                margin-right: 5em;
+            }
+
+            .sp img.avatar {
+                margin-left: 2em;
+                margin-right: 2em;
+            }
+
+            .sp blockquote p:first-of-type,
             section.book p:first-of-type {
                 padding-top: 2em;
             }
+
             section.book p,
             section.avatar p {
                 margin-right: 5em;
@@ -133,18 +176,30 @@ permalink: pretty
             <p>Learn what Event Sourcing is and how it can future-proof your application by keeping track of every change made to your model. Find out what CQRS (Command-Query Responsibility Segregation) is and how it can make your application more flexible.</p>
         </section>
         <hr>
+        <section class="sp clearfix">
+            <img class="avatar" src="/assets/images/books/samgreenwood.jpg" width="200" height="200">
+
+            <blockquote>
+                <p>Just watched Beau's Nomad PHP talk on Event Sourcing and CQRS, great talk. Filled some conceptual knowledge gaps for sure!</p>
+
+                <footer class="clearfix">
+                    <cite>Sam Greenwood, Developer at Hostworks and aspiring architecture astronaut.</cite>
+                </footer>
+            </blockquote>
+        </section>
+        <hr>
         <section>
             <script async id="_ck_75094" src="https://forms.convertkit.com/75094?v=5"></script>
         </section>
         <hr>
-        <section class="avatar clearfix">
+        <section class="author clearfix">
             <img class="avatar" src="/assets/images/beau.png" width="400" height="400">
             <h2>About the author</h2>
             <p>
                 Hi! I'm Beau Simensen, Co-Founder and Software Architect for Monii (<a href="http://monii.com">monii.com</a>, <a href="http://monii.io">monii.io</a>) and co-host of That Podcast (<a href="https://twitter.com/thatpodcast">@thatpodcast</a>, <a href="http://thatpodcast.io">thatpodcast.io</a>). I created Sculpin (<a href="https://sculpin.io">sculpin.io</a>) and helped create Stack PHP (<a href="http://stackphp.com">stackphp.com</a>).
             </p>
             <p>
-                I found Domain-Driven Design in 2007 and it forever changed the way I saw software. Over the last year and a half I've been invited to present workshops on Event Sourcing and CQRS at conferences in the United States of America, the Netherlands, Belgium and Spain.
+                I found Domain-Driven Design in 2008 and it forever changed the way I saw software. Over the last year and a half I've been invited to present workshops on Event Sourcing and CQRS at conferences in the United States of America, the Netherlands, Belgium and Spain.
             </p>
         </section>
         <hr>
