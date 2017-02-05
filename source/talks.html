@@ -27,7 +27,7 @@ meta:
 
 ---
 <section id="talks">
-    {% set now = "now"|date_modify("-2 day")|date("U") %}
+    {% set now = "now"|date_modify("-1 day")|date("U") %}
 
     {% set found = false %}
     {% for talk in data.talks|reverse if talk.date >= now %}
