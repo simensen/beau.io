@@ -104,6 +104,72 @@ permalink: pretty
             content: '\2014 \00A0';
         }
 
+.big-mc {
+  display: block;
+  margin: 0 auto;
+  max-width: 1024px; }
+
+form.big-mc {
+  border-top: 1.5em solid #0d6db8;
+  border-bottom: .75em solid #1d446a;
+  margin: 2em auto;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25); }
+  form.big-mc h2 {
+    margin: 0;
+    padding: 1em 0 .5em;
+    font-weight: bold;
+    font-size: 1.5em; }
+  form.big-mc label {
+    display: block;
+    font-weight: bold; }
+  form.big-mc input[type=text], form.big-mc input[type=email] {
+    width: 100%;
+    background-color: #eee;
+    padding: .5em .75em;
+    border: 1px solid #1d446a;
+    border-radius: .25em;
+    margin-bottom: 1em; }
+  form.big-mc input[type=submit] {
+    width: 100%;
+    padding: 1em;
+    color: white;
+    background-color: #0d6db8;
+    display: inline-block;
+    border: none;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer; }
+  form.big-mc .copy {
+    text-align: left;
+    padding: 0 1em 1em 1em; }
+  form.big-mc .fields {
+    text-align: left;
+    border-top: 1px solid #ddd;
+    padding: 1em; }
+
+form.big-mc--inverse {
+  background-color: white;
+  color: black;
+  border-top-color: #aaa;
+  border-bottom-color: #aaa; }
+
+
+        @media only screen and (min-width: 640px) {
+  form.big-mc {
+    display: -ms-flexbox;
+    display: flex; }
+    form.big-mc .copy,
+    form.big-mc .fields {
+      -ms-flex-align: stretch;
+          -ms-grid-row-align: stretch;
+          align-items: stretch;
+      -ms-flex: 1;
+          flex: 1; }
+    form.big-mc .fields {
+      border-top: none;
+      border-left: 1px solid #ddd; }
+        }
+
         @media only screen and (min-width: 1024px) {
             .content {
                 max-width: 900px;
@@ -189,7 +255,31 @@ permalink: pretty
         </section>
         <hr>
         <section>
-            <script async id="_ck_75094" src="https://forms.convertkit.com/75094?v=5"></script>
+            <form action="//dflydev.us3.list-manage.com/subscribe/post?u=cdad0534e7ee9275612755f13&amp;id=fcdf76298b" method="post" name="blog-mailing-list" class="big-mc big-mc validate clearfix" target="_blank" novalidate>
+                <div class="copy">
+                    <h2>Want to get early access?</h2>
+                    <p>
+                        I'll be sharing early-bird discounts, a free chapter and other goodies as I get closer to launch!
+                    </p>
+                </div>
+                <div class="fields">
+                    <div class="mc-field-group">
+                        <label for="mce-FNAME">First Name</label>
+                        <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+                    </div>
+                    <div class="mc-field-group">
+                        <label for="mce-EMAIL">Email Address</label>
+                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
+                    </div>
+                    <div id="mce-responses" class="clear">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_cdad0534e7ee9275612755f13_fcdf76298b" tabindex="-1" value=""></div>
+                    <div class="clear"><input type="submit" value="Get early access" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-lg btn-primary"></div>
+                </div>
+            </form>
+            <!--End mc_embed_signup-->
         </section>
         <hr>
         <section class="author clearfix">
