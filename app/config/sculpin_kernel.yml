@@ -3,3 +3,11 @@ sculpin_content_types:
         enabled: false
     talks:
         permalink: talks/:year/:month/:day/:filename/
+sculpin_twig:
+    extensions:
+        - ''
+        - html
+        - twig
+        - json
+        - html.twig
+        - twig.html

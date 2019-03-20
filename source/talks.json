@@ -1,0 +1,26 @@
+---
+use: [talks]
+permalink: talks.json
+
+---
+{
+	"talks": {
+		{% for talk in data.talks %}
+			"{{ talk.url }}": {
+				"title": "{{ talk.title }}",
+				"location": "{{ talk.location }}",
+				"event_url": "{{ talk.logo_link }}",
+				"event_logo_url": "{{ talk.logo }}",
+				"event_speaker_url": "{{ talk.logo_link }}",
+				"event_talk_url": "{{ talk.logo_link }}",
+				"cover_photo_url": "{{ talk.cover }}",
+				"slides_url": "{{ talk.slides }}",
+				"slides_embed": "{{ talk.slides_embed }}",
+				"joindin_url": "{{ talk.joinedin }}",
+				"description": {{ talk.blocks.description|json_encode|raw }},
+				"tags": {{ talk.tags|json_encode|raw }},
+				"meta": {{ talk.meta.meta|json_encode|raw }}
+			}{% if not loop.last %},{% endif %}
+		{% endfor %}
+	}
+}
