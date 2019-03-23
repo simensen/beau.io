@@ -45,18 +45,16 @@ skills:
         </header>
         <ul class="social-media">
             <li><a href="https://twitter.com/beausimensen"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="https://plus.google.com/+BeauSimensen"><i class="fa fa-google-plus"></i></a></li>
             <li><a href="https://www.linkedin.com/in/simensen"><i class="fa fa-linkedin"></i></a></li>
             <li><a href="https://github.com/simensen"><i class="fa fa-github"></i></a></li>
             <li><a href="https://www.facebook.com/simensen"><i class="fa fa-facebook"></i></a></li>
         </ul>
         <ul class="blogs">
-            <li><a href="http://thatpodcast.io">thatpodcast.io</a></li>
-            <li><a href="http://ddd.io">ddd.io</a></li>
-            <li><a href="http://srcmvn.com">srcmvn.com</a></li>
-            <li><a href="http://dflydev.com">dflydev.com</a></li>
+            <li><a href="https://beausimensen.com">beausimensen.com</a></li>
+            <li><a href="https://astrocasts.com">astrocasts.com</a></li>
+            <li><a href="https://thatpodcast.io">thatpodcast.io</a></li>
         </ul>
-        <a class="primary" href="mailto:beau@beau.io">Contact Me</a>
+        <a class="primary" href="mailto:beau@dflydev.com">Contact Me</a>
     </div>
 </section>
 <section id="profile">
@@ -79,174 +77,9 @@ skills:
             </div>
             <div class="bio col-sm-9">
                 <p>
-                    Beau Simensen (<a href="https://twitter.com/beausimensen">@beausimensen</a>, <a href="https://beau.io">beau.io</a>) has been a professional polyglot programmer since 1998. He is a Technical Product Manager for Blackfire (<a href="https://blackfire.io">blackfire.io</a>) and is co-host of That Podcast (<a href="https://twitter.com/thatpodcast">@thatpodcast</a>, <a href="http://thatpodcast.io">thatpodcast.io</a>). An active open-sourcer, he created Sculpin (<a href="https://sculpin.io">sculpin.io</a>) and helped create Stack PHP (<a href="http://stackphp.com">stackphp.com</a>). Beau is a proponent of framework agnostic code. Unglue all the things!
-                </p>
-
-                <p>
-                    After living in Seattle for many years Beau set off for the midwest with his wife and son to spend time with their families. Currently, he lives near Madison, WI where he can frequently be found attending the <a href="http://madisonphp.com">Madison PHP</a> user group.
+                    Beau Simensen (<a href='https://twitter.com/beausimensen'>@beausimensen</a>, <a href='https://beausimensen.com'>beausimensen.com</a>) is a Technology Strategy Consultant and has been a professional polyglot programmer since 1998. He hosts Astrocasts (<a href='https://twitter.com/astrocasts'>@astrocasts</a>, <a href='https://astrocasts.com'>astrocasts.com</a>) and is co-host of That Podcast (<a href='https://twitter.com/thatpodcast'>@thatpodcast</a>, <a href='http://thatpodcast.io'>thatpodcast.io</a>). An active open-sourcer, he created Sculpin (<a href='https://sculpin.io'>sculpin.io</a>) and helped create Stack PHP (<a href='http://stackphp.com'>stackphp.com</a>). He is also a serving Core Committee member for the PHP Framework Interoperability Group (PHP-FIG) (<a href='https://php-fig.org'>php-fig.org</a>).
                 </p>
             </div>
     </div>
 </section>
-<!--
-<section id="news">
-    <a class="return hide-text" href="#profile"></a>
-    <header>
-        <div class="container">
-            <div class="header-container">
-                <h1>News</h1>
-            </div>
-        </div>
-    </header>
-    <div class="container">
-
-
-        <h1>
-            <a href="http://portland2013.live.symfony.com/">
-                <img src="{{ site.url }}/assets/images/news/sfl_portland.png" class="sfl_portland" style="float: right; margin-left: 1em;">
-            </a>
-            Symfony Live Portland 2013
-        </h1>
-        <p>
-            Welcome Symfony Live visitors! If you saw my presentation please
-            <a href="https://joind.in/8667">leave me feedback!</a>
-            If we met in person, <a href="https://twitter.com/beausimensen">please send
-            me a Tweet</a> so we can stay in touch!
-        </p>
-
-        <p>
-            <a href="http://srcmvn.com/blog/2013/05/23/symfony-live-2013-portland-embedded-composer/">See my blog post</a>
-            for more information.
-        </p>
-
-    </div>
-</section>
--->
-<!--
-<section id="skills">
-    <header>
-        <div class="container">
-            <div class="header-container">
-                <h1>Skills</h1>
-            </div>
-        </div>
-    </header>
-    <div class="container">
-        <div class="row">
-            {% for skill in page.skills %}
-                <div class="skill col-sm-4 col-lg-2">
-                    <span class="chart" data-percent="{{ skill.percent }}">
-                        <span class="percent">{{ skill.percent }}</span>
-                        <h2>{{ skill.name }}</h2>
-                    </span>
-                </div>
-            {% endfor %}
-        </div>
-        <div class="hire-me">
-            <a class="primary" href="mailto:beau@beau.io">Hire Me</a>
-        </div>
-    </div>
-    <a class="continue hide-text" href="#experience"></a>
-</section>
--->
-<!--
-<section id="experience">
-    <header>
-        <div class="container">
-            <div class="header-container">
-                <h1>Experience</h1>
-            </div>
-        </div>
-    </header>
-    <div class="container">
-        <div class="row">
-            {% for experience in page.experiences %}
-                <div class="experience clearfix {% if experience.logo %}with-logo col-lg-6{% else %}col-lg-12{% endif %}">
-                    {% if experience.logo %}
-                        <div class="logo-wrapper">
-                            {% if experience.website %}<a href="{{ experience.website }}">{% endif %}
-                            <img src="{{ site.url }}/{{ experience.logo }}">
-                            {% if experience.website %}</a>{% endif %}
-                        </div>
-                    {% endif %}
-                    <div class="experience-meta">
-                        <h2>{{ experience.name }}</h2>
-                        {% if experience.website %}
-                            <a href="{{ experience.website }}">{{ experience.website }}</a>
-                        {% endif %}
-                        <div class="role-wrapper">
-                            <p>
-                                <span class="role">{{ experience.role }}</span>
-                                from
-                                <span class="time">
-                                    {{ experience.start }} -
-                                    {% if experience.end %}
-                                        {{ experience.end }}
-                                    {% else %}
-                                        Present
-                                    {% endif %}
-                                    {% if experience.location %}
-                                        ({{ experience.location }})
-                                    {% endif %}
-                                </span>
-                            </p>
-                        </div>
-                         <p>{{ experience.description|raw }}</p>
-                     </div>
-                 </div>
-            {% endfor %}
-        </div>
-    </div>
-    <a class="continue hide-text" href="#projects"></a>
-</section>
--->
-<!--
-<section id="projects">
-    <header>
-        <div class="container">
-            <div class="header-container">
-                <h1>Projects</h1>
-            </div>
-        </div>
-    </header>
-    <div class="container">
-            {% for project in page.projects %}
-                <div class="project clearfix {% if project.logo %}with-logo col-lg-6{% else %}col-lg-12{% endif %}">
-                    {% if project.logo %}
-                        <div class="logo-wrapper">
-                            <a href="{{ project.marketing }}"><img src="{{ site.url }}/{{ project.logo }}"></a>
-                        </div>
-                    {% endif %}
-                    <div class="project-meta">
-                        <h2><a href="{{ project.marketing }}">{{ project.name }}</a></h2>
-                        {% if project.website %}
-                            <a href="{{ project.website }}">{{ project.website }}</a>
-                        {% endif %}
-                         <p>{{ project.description }}</p>
-                         <p class="read-more">
-                            <a href="{{ project.marketing }}">read more &raquo;</a>
-                         </p>
-                     </div>
-                 </div>
-            {% endfor %}
-            <div class="clearfix see-more-projects">
-                <a class="primary" href="http://dflydev.com/projects/">See More Projects</a>
-            </div>
-        </div>
-    </div>
-</section>
--->
-<!--
-<section id="talks">
-    <header>
-        <div class="container">
-            <div class="header-container">
-                <h1>Talks</h1>
-            </div>
-        </div>
-    </header>
-    <div class="container">
-    </div>
-</section>
--->
 {% endblock %}
